@@ -1,12 +1,13 @@
 'use client'
+
 import React from 'react'
-import { useParams } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import { portfolioItems } from '@/data/portfolio'
 import { motion } from 'framer-motion'
 import { MoveLeft } from 'lucide-react'
-import { useRouter } from 'next/navigation'
 import Gallery from '@/components/Home/Gallery'
 import Image from 'next/image'
+
 export default function PortfolioDetail() {
   const params = useParams()
   const router = useRouter()
@@ -18,19 +19,32 @@ export default function PortfolioDetail() {
   }
 
   return (
-    <div className="bg-white py-5">
-      <div className="container mx-auto">
-        <motion.button onClick={handleBack} whileHover={{ x: 5 }} className="my-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
+    <div className="bg-white">
+      <div className="container mx-auto  py-10">
+        {/* Back Button */}
+        <motion.button onClick={handleBack} whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="my-4 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
           <MoveLeft className="w-5 h-5" /> BACK
         </motion.button>
-        <div className="my-5">
-          <h1 className="text-5xl w-8/12 text-left font-bold leading-tight text-[#14462C]">{item?.title}</h1>
-          <div className="relative w-full h-[40vh] my-5">
-            <Image src={item?.image ?? ''} alt="Background" fill priority className="object-cover" />
-            <div className="absolute inset-0 bg-black/40" />
+
+        {/* Hero Image with Overlay */}
+        <div className="relative w-full h-[50vh] rounded-2xl overflow-hidden shadow-lg mb-10">
+          <Image src={item?.image ?? ''} alt={item?.title ?? 'Portfolio'} fill priority className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+          <div className="absolute bottom-10 left-10 text-white">
+            <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-3xl md:text-5xl font-bold leading-tight">
+              {item?.title}
+            </motion.h1>
           </div>
-          <p className="text-md leading-relaxed py-5 text-gray-600">{item?.text}</p>
-          <h1 className="text-2xl w-8/12 text-left font-bold leading-tight text-[#14462C]">Gallery</h1>
+        </div>
+
+        {/* Description */}
+        <div className="md:w-10/12 mx-auto text-gray-700">
+          <p className="text-md leading-relaxed mb-8">{item?.text}</p>
+        </div>
+
+        {/* Gallery */}
+        <div className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#14462C] mb-6">Gallery</h2>
           <Gallery data={item?.gallery ?? []} hidden={false} />
         </div>
       </div>

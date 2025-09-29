@@ -4,15 +4,16 @@ import Logo from '../../public/images/Netincom_b.png'
 import { useState, useEffect } from 'react'
 import { Menu } from 'lucide-react'
 import { usePathname } from 'next/navigation'
-
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
-    if (pathname !== '/') return
     const handleScroll = () => {
+      if (pathname !== '/') return
       const aboutSection = document.getElementById('about')
       if (!aboutSection) return
       setScrolled(window.scrollY >= aboutSection.offsetTop)
@@ -21,31 +22,59 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [pathname])
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const navbarClass = pathname === '/' && scrolled ? 'fixed top-0 bg-gradient-to-r from-[#14462C] to-[#0F2F1C] shadow-lg' : pathname === '/' ? 'absolute' : 'bg-gradient-to-r from-[#14462C] to-[#0F2F1C]'
+  const links =
+    pathname === '/'
+      ? [
+          { href: '#about', label: 'About Us', isAnchor: true },
+          { href: '#portfolio', label: 'Portfolio', isAnchor: true },
+          { href: '#gallery', label: 'Gallery', isAnchor: true },
+          { href: '/contact', label: 'Contact Us', isAnchor: true },
+        ]
+      : [
+          { href: '/about', label: 'About Us', isAnchor: false },
+          { href: '/portofolio', label: 'Portfolio', isAnchor: false },
+          { href: '/gallery', label: 'Gallery', isAnchor: false },
+          { href: '/contact', label: 'Contact Us', isAnchor: false },
+        ]
 
   return (
-    <nav className={`w-full text-white py-6 z-30 transition-all duration-300 ${navbarClass}`}>
+    <motion.nav
+      initial={false}
+      animate={scrolled ? 'scrolled' : 'top'}
+      variants={{
+        top: {
+          background: 'rgba(0,0,0,0)',
+          boxShadow: '0 0 0 rgba(0,0,0,0)',
+          transition: { duration: 0.5, ease: 'easeInOut' },
+        },
+        scrolled: {
+          background: 'linear-gradient(to right, #14462C, #0F2F1C)',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+          transition: { duration: 0.5, ease: 'easeInOut' },
+        },
+      }}
+      className="w-full z-30 py-6 fixed top-0"
+    >
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <Image src={Logo} onClick={scrollToTop} alt="Logo Netincom" className="cursor-pointer" width={150} height={150} />
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="hover:text-[#A2D5AB] transition-colors">
-              About Us
-            </a>
-            <a href="#portfolio" className="hover:text-[#A2D5AB] transition-colors">
-              Portfolio
-            </a>
-            <a href="#gallery" className="hover:text-[#A2D5AB] transition-colors">
-              Gallery
-            </a>
-            <a href="#contact" className="hover:text-[#A2D5AB] transition-colors">
-              Contact Us
-            </a>
+          <Link href="/" className="cursor-pointer">
+            <Image src={Logo} alt="Logo Netincom" width={150} height={150} priority />
+          </Link>
+
+          <div className="hidden md:flex items-center gap-8 text-white">
+            {links.map((link) =>
+              link.isAnchor ? (
+                <a key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors">
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors">
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
+          {/* Mobile Toggle */}
           <div className="md:hidden">
             <button onClick={() => setOpen(!open)}>
               <Menu className="w-6 h-6 text-white" />
@@ -53,22 +82,23 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-[#0F2F1C] px-6 py-4 flex flex-col gap-4">
-          <a href="#about" className="hover:text-[#A2D5AB] transition-colors">
-            About Us
-          </a>
-          <a href="#portfolio" className="hover:text-[#A2D5AB] transition-colors">
-            Portfolio
-          </a>
-          <a href="#gallery" className="hover:text-[#A2D5AB] transition-colors">
-            Gallery
-          </a>
-          <a href="#contact" className="hover:text-[#A2D5AB] transition-colors">
-            Contact Us
-          </a>
+          {links.map((link) =>
+            link.isAnchor ? (
+              <a key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors" onClick={() => setOpen(false)}>
+                {link.label}
+              </a>
+            ) : (
+              <Link key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors" onClick={() => setOpen(false)}>
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
       )}
-    </nav>
+    </motion.nav>
   )
 }

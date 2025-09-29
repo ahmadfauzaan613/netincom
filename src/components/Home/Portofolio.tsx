@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface GalleryProps {
   src: string
@@ -25,6 +26,8 @@ interface PortoProps {
 }
 
 export default function Portofolio({ data, hidden, className }: PortoProps) {
+  const path = usePathname()
+
   return (
     <React.Fragment>
       {hidden && (
@@ -38,14 +41,20 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
 
       <div className={className}>
         {data.map((item, index) => (
-          <motion.div key={item.id} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500">
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, y: 40 }}
+            {...(path === '/portfolio' ? { animate: { opacity: 1, y: 0 } } : { whileInView: { opacity: 1, y: 0 }, viewport: { once: true, amount: 0.1 } })}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
+          >
             <div className="relative w-full h-[30vh] overflow-hidden group">
               <Image src={item.image} alt={item.title} fill className="object-cover transform group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
             </div>
 
             <div className="p-5">
-              <h2 className="text-lg font-bold text-[#14462C]  transition">{item.title}</h2>
+              <h2 className="text-lg font-bold text-[#14462C] transition">{item.title}</h2>
               <p className="text-sm mt-2">{item.desc}</p>
               <div className="py-4">
                 <Link href={`/portofolio/${item.id}`}>
@@ -58,6 +67,7 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
           </motion.div>
         ))}
       </div>
+
       {hidden && (
         <div className="flex items-center justify-center" id="gallery">
           <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12 rounded-md bg-transparent hover:bg-[#14462C] border border-[#14462C] text-[#14462C] hover:text-white px-12 py-3 font-semibold transition-colors duration-300">

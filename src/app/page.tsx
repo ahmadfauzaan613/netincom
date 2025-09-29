@@ -20,6 +20,8 @@ export default function Home() {
       </div>
       <div className="container mx-auto mt-40">
         <AboutUs />
+      </div>
+      <div className="bg-amber-600 p-2">
         <Expertise />
       </div>
       <div className="bg-gray-50 mt-40">
