@@ -9,7 +9,7 @@ export default function PortofolioPages() {
     <>
       <Hero title="PORTOFOLIO" image={ContactUs} />
       <div className="container mx-auto my-20">
-        <h1 className="text-2xl md:text-4xl text-center font-extrabold  leading-tight text-[#14462C]">PORTFOLIO</h1>
+        <h1 className="text-2xl md:text-4xl text-center font-bold  leading-tight text-[#14462C]">PORTFOLIO</h1>
         <Portofolio data={portfolioItems} hidden={false} className="grid grid-cols-4 gap-8 my-16 px-4" />
       </div>
     </>

@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="container mx-auto my-20">
         <div className="grid grid-cols-2 items-start">
           <div>
-            <h1 className="text-2xl md:text-4xl font-extrabold  leading-tight text-[#14462C]">CONTACT US</h1>
+            <h1 className="text-2xl md:text-4xl font-bold  leading-tight text-[#14462C]">CONTACT US</h1>
             <p className="text-base md:text-md leading-relaxed pt-4 text-gray-700">Ready to take your business to the next level? The Netincom team is here to provide creative communication solutions tailored to your needs. Contact us today and start a partnership that drives results!</p>
             <div className="flex flex-col w-full max-w-10/12 space-y-5 divide-y divide-gray-300 py-4">
               <div className="flex items-center gap-3 py-3">

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { MoveLeft } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import Gallery from '@/components/Home/Gallery'
+import Image from 'next/image'
 export default function PortfolioDetail() {
   const params = useParams()
   const router = useRouter()
@@ -24,7 +25,10 @@ export default function PortfolioDetail() {
         </motion.button>
         <div className="my-5">
           <h1 className="text-5xl w-8/12 text-left font-bold leading-tight text-[#14462C]">{item?.title}</h1>
-          <div className="bg-black w-full h-[40vh] my-5"></div>
+          <div className="relative w-full h-[40vh] my-5">
+            <Image src={item?.image ?? ''} alt="Background" fill priority className="object-cover" />
+            <div className="absolute inset-0 bg-black/40" />
+          </div>
           <p className="text-md leading-relaxed py-5 text-gray-600">{item?.text}</p>
           <h1 className="text-2xl w-8/12 text-left font-bold leading-tight text-[#14462C]">Gallery</h1>
           <Gallery data={item?.gallery ?? []} hidden={false} />

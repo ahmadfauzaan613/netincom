@@ -27,7 +27,7 @@ export default function GalleryPage() {
     <>
       <Hero title="GALLERY" image={ContactUs} />
       <div className="container mx-auto my-20">
-        <h1 className="text-2xl md:text-4xl text-center font-extrabold  leading-tight text-[#14462C]">GALLERY</h1>
+        <h1 className="text-2xl md:text-4xl text-center font-bold  leading-tight text-[#14462C]">GALLERY</h1>
         <Gallery data={images} hidden={false} />
       </div>
     </>
