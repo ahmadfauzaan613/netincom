@@ -3,7 +3,7 @@
 import Hero from '@/components/Hero'
 import React from 'react'
 import ContactHero from '../../../public/images/contact.svg'
-import { Globe, Instagram, Linkedin, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
+import { Instagram, Linkedin, Mail, MessageCircle, Phone } from 'lucide-react'
 import Image from 'next/image'
 import ContactUs from '../../../public/images/contactUs.svg'
 

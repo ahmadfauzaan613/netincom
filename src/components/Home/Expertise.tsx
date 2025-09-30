@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { PenTool, Camera, Printer, Palette, MoveRight } from 'lucide-react'
+import { PenTool, Camera, Printer, Palette } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
