@@ -1,19 +1,21 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
+import { Roboto, Open_Sans } from 'next/font/google'
 import ScrollToTop from '@/components/ScrollToTop'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const roboto = Roboto({
   subsets: ['latin'],
+  variable: '--font-roboto',
+  weight: ['400', '500', '700'],
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const openSans = Open_Sans({
   subsets: ['latin'],
+  variable: '--font-open-sans',
+  weight: ['400', '700'],
 })
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${roboto.variable} ${openSans.variable} antialiased`}>
         <Navbar />
         {children}
         <div className="fixed bottom-8 right-8 z-50">

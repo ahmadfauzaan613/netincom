@@ -50,9 +50,9 @@ export default function CompetitiveAdvantage() {
                 <div className="p-3 rounded-xl bg-[#14462C]/10 text-[#14462C]">
                   <Icon size={28} />
                 </div>
-                <h2 className="text-lg font-semibold text-gray-800">{item.title}</h2>
+                <h2 className="text-lg font-semibold titleCustom text-gray-800">{item.title}</h2>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-gray-600 text-sm bodyCustom leading-relaxed">{item.desc}</p>
             </motion.div>
           )
         })}

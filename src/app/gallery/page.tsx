@@ -18,7 +18,7 @@ export default function GalleryPage() {
     <>
       <Hero title="GALLERY" image={ContactUs} />
       <div className="container mx-auto my-20 px-6">
-        <h1 className="text-2xl md:text-4xl text-center font-bold leading-tight text-[#14462C] mb-10">GALLERY</h1>
+        <h1 className="text-2xl titleCustom md:text-4xl text-center font-bold leading-tight text-[#14462C] mb-10">GALLERY</h1>
 
         {/* Masonry layout */}
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mt-10">
@@ -37,10 +37,8 @@ export default function GalleryPage() {
           ))}
         </div>
 
-        {/* Lightbox */}
         <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
           <DialogContent className="max-w-4xl p-0 bg-transparent shadow-none border-none">
-            {/* Hidden title for accessibility */}
             <DialogTitle>
               <VisuallyHidden>Image Preview</VisuallyHidden>
             </DialogTitle>

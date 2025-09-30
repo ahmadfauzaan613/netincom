@@ -19,8 +19,8 @@ export default function Gallery({ data, hidden }: GalleryProps) {
     <React.Fragment>
       {hidden && (
         <div className="flex items-center justify-between">
-          <h1 className="text-5xl font-bold text-[#14462C]">OUR GALLERY</h1>
-          <MotionLink href="/gallery" whileHover={{ x: 5 }} className="mt-1 inline-flex items-center gap-2 text-orange-500 font-semibold cursor-pointer hover:text-orange-600 hover:underline">
+          <h1 className="text-5xl font-bold titleCustom text-[#14462C]">OUR GALLERY</h1>
+          <MotionLink href="/gallery" whileHover={{ x: 5 }} className="mt-1 bodyCustom inline-flex items-center gap-2 text-orange-500 font-semibold cursor-pointer hover:text-orange-600 hover:underline">
             VIEW <MoveRight size={20} />
           </MotionLink>
         </div>

@@ -13,7 +13,7 @@ export default function Hero({ title, image }: HeroProps) {
       <div className="absolute inset-0 bg-black/40" />
       <div className="container mx-auto">
         <div className="relative max-w-3xl text-white translate-y-12  ">
-          <h1 className="text-5xl pb-3 font-bold leading-tight">{title}</h1>
+          <h1 className="text-5xl pb-3 titleCustom font-bold leading-tight">{title}</h1>
         </div>
       </div>
     </div>

@@ -18,8 +18,8 @@ export default function ServicesGrid() {
     <>
       {/* Header */}
       <div className="text-left">
-        <h1 className="text-5xl font-bold text-[#14462C]">WHAT WE CAN DO FOR YOU</h1>
-        <p className="text-md leading-relaxed pt-3 mx-auto text-black">
+        <h1 className="text-5xl font-bold titleCustom text-[#14462C]">WHAT WE CAN DO FOR YOU</h1>
+        <p className="text-md leading-relaxed pt-3 mx-auto text-black bodyCustom">
           Through our integrated expertise, we transform complex corporate information into clear, compelling, and visually engaging communication materials. From regulatory-driven reports to creative brand publications, we provide end-to-end solutions that cover writing, design, photography, and
           production—ensuring every deliverable is both compliant and impactful.
         </p>
@@ -33,7 +33,7 @@ export default function ServicesGrid() {
             <div className="absolute inset-0 bg-[#14462C]/70 group-hover:bg-[#14462C]/90 transition"></div>
 
             <div className="absolute inset-0 flex items-center justify-center p-4">
-              <h1 className="text-white text-lg font-semibold text-center leading-snug">{service.title}</h1>
+              <h1 className="text-white text-lg font-semibold text-center leading-snug titleCustom">{service.title}</h1>
             </div>
           </motion.div>
         ))}
@@ -41,7 +41,7 @@ export default function ServicesGrid() {
 
       {/* Button */}
       <div className="flex items-center justify-center">
-        <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12 rounded-md bg-transparent hover:bg-[#14462C] border border-[#14462C] text-[#14462C] hover:text-white px-10 py-3 font-semibold transition-colors duration-300">
+        <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12 rounded-md bodyCustom bg-transparent hover:bg-[#14462C] border border-[#14462C] text-[#14462C] hover:text-white px-10 py-3 font-semibold transition-colors duration-300">
           EXPLORE
         </motion.button>
       </div>

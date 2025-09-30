@@ -76,11 +76,11 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 text-white">
             {links.map((link) =>
               link.isAnchor ? (
-                <a key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors">
+                <a key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors">
                   {link.label}
                 </a>
               ) : (
-                <Link key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors">
+                <Link key={link.href} href={link.href} className="hover:text-[#fff] transition-colors">
                   {link.label}
                 </Link>
               )
@@ -99,11 +99,11 @@ export default function Navbar() {
         <div className="md:hidden bg-[#0F2F1C] px-6 py-4 flex flex-col gap-4">
           {links.map((link) =>
             link.isAnchor ? (
-              <a key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors" onClick={() => setOpen(false)}>
+              <a key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors" onClick={() => setOpen(false)}>
                 {link.label}
               </a>
             ) : (
-              <Link key={link.href} href={link.href} className="hover:text-[#A2D5AB] transition-colors" onClick={() => setOpen(false)}>
+              <Link key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors" onClick={() => setOpen(false)}>
                 {link.label}
               </Link>
             )

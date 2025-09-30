@@ -33,8 +33,8 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
     <React.Fragment>
       {hidden && (
         <div className="text-left mx-auto px-4">
-          <h1 className="text-5xl font-bold text-[#14462C]">PORTFOLIO</h1>
-          <p className="text-md leading-relaxed pt-5 text-gray-600">
+          <h1 className="text-5xl titleCustom font-bold text-[#14462C]">PORTFOLIO</h1>
+          <p className="text-md bodyCustom leading-relaxed pt-5 text-gray-600">
             Netincom stands as a visionary force in the realm of creative communication consultancy, offering fully integrated services. Our journey is driven by an unwavering commitment to excellence, a passion for innovation, and an unrelenting focus on client satisfaction.
           </p>
         </div>
@@ -55,11 +55,11 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
             </div>
 
             <div className="p-5">
-              <h2 className="text-lg font-bold text-[#14462C] transition">{item.title}</h2>
-              <p className="text-sm mt-2">{item.desc}</p>
+              <h2 className="text-lg font-bold titleCustom text-[#14462C] transition">{item.title}</h2>
+              <p className="text-sm mt-2 bodyCustom">{item.desc}</p>
               <div className="py-4">
                 <Link href={`/portofolio/${item.id}`}>
-                  <motion.div whileHover={{ x: 5 }} className="absolute bottom-3 inline-block mt-4 text-sm font-semibold text-orange-400 hover:text-orange-300 transition">
+                  <motion.div whileHover={{ x: 5 }} className="absolute bodyCustom bottom-3 inline-block mt-4 text-sm font-semibold text-orange-400 hover:text-orange-300 transition">
                     VISIT
                   </motion.div>
                 </Link>

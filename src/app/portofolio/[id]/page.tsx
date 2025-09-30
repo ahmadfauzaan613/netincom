@@ -38,12 +38,12 @@ export default function PortfolioDetail() {
 
         {/* Description */}
         <div className="mx-auto text-gray-700">
-          <p className="text-md leading-relaxed mb-8">{item?.text}</p>
+          <p className="text-md leading-relaxed mb-8 bodyCustom">{item?.text}</p>
         </div>
 
         {/* Gallery */}
         <div className="mt-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#14462C] mb-6">Gallery</h2>
+          <h2 className="text-2xl md:text-3xl font-bold titleCustom text-[#14462C] mb-6">Gallery</h2>
           <Gallery data={item?.gallery ?? []} hidden={false} />
         </div>
       </div>
