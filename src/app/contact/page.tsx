@@ -14,17 +14,17 @@ export default function Contact() {
       <Hero title="CONTACT US" image={ContactHero} />
 
       {/* Contact Section */}
-      <div className="relative bg-gray-50 pt-20">
-        <div className="container mx-auto grid grid-cols-2 gap-10 items-start">
+      <div className="relative bg-gray-50 pt-20 px-6">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Contact Info */}
           <div className="p-6 bg-white rounded-2xl shadow-lg">
-            <h2 className="text-3xl titleCustom font-bold text-[#14462C]">Get In Touch</h2>
-            <p className="text-gray-600 bodyCustom mt-3 mb-6">Reach out to us through our social media or contact details below:</p>
+            <h2 className="text-2xl sm:text-3xl titleCustom font-bold text-[#14462C]">Get In Touch</h2>
+            <p className="text-gray-600 text-sm sm:text-base bodyCustom mt-3 mb-6">Reach out to us through our social media or contact details below:</p>
 
             {/* Marketing Office */}
             <div className="mb-6">
               <h3 className="font-semibold text-[#14462C]">Marketing Office</h3>
-              <p className="bodyCustom">
+              <p className="bodyCustom text-sm sm:text-base">
                 Wijaya Grand Centre <br />
                 Jl. Wijaya II, Blok G No.15 <br />
                 Kebayoran Baru, Jakarta Selatan
@@ -34,7 +34,7 @@ export default function Contact() {
             {/* Workshop */}
             <div className="mb-6">
               <h3 className="font-semibold text-[#14462C]">Workshop</h3>
-              <p className="bodyCustom">
+              <p className="bodyCustom text-sm sm:text-base">
                 Jl. Besakih V Blok G6 No. 26 <br />
                 Limo, Depok, Jawa Barat
               </p>

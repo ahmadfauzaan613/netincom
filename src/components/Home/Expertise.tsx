@@ -32,16 +32,16 @@ export default function Expertise() {
   const MotionLink = motion(Link)
   const path = usePathname()
   return (
-    <div className="container mx-auto my-10">
+    <div className="container mx-auto my-10 px-6">
       <div className="text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-white titleCustom">OUR EXPERTISE</h1>
-        <p className="pt-3 text-white bodyCustom">
+        <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-white titleCustom">OUR EXPERTISE</h1>
+        <p className="pt-3 text-white text-sm sm:text-base md:text-base bodyCustom">
           Our expertise reflects our commitment to delivering integrated communication solutions. With a blend of creativity, technical knowledge, and strategic thinking, we provide services that help businesses stand out, connect with their audience, and achieve sustainable growth.
         </p>
       </div>
 
       {/* Grid Cards */}
-      <div className="grid grid-cols-2 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-6 sm:gap-8 mt-8 sm:mt-12">
         {expertiseList.map((item, index) => {
           const Icon = item.icon
           return (

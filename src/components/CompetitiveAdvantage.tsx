@@ -38,10 +38,10 @@ const advantages = [
 
 export default function CompetitiveAdvantage() {
   return (
-    <div className="container mx-auto mt-16 ">
-      <h1 className="text-4xl font-bold leading-tight text-[#14462C] text-center">COMPETITIVE ADVANTAGE</h1>
+    <div className="container mx-auto mt-16 px-6">
+      <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold leading-tight text-[#14462C] text-center">COMPETITIVE ADVANTAGE</h1>
 
-      <div className="grid grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {advantages.map((item, i) => {
           const Icon = item.icon
           return (
@@ -50,9 +50,9 @@ export default function CompetitiveAdvantage() {
                 <div className="p-3 rounded-xl bg-[#14462C]/10 text-[#14462C]">
                   <Icon size={28} />
                 </div>
-                <h2 className="text-lg font-semibold titleCustom text-gray-800">{item.title}</h2>
+                <h2 className="text-base sm:text-lg font-semibold titleCustom text-gray-800">{item.title}</h2>
               </div>
-              <p className="text-gray-600 text-sm bodyCustom leading-relaxed">{item.desc}</p>
+              <p className="text-gray-600 text-sm sm:text-base bodyCustom leading-relaxed">{item.desc}</p>
             </motion.div>
           )
         })}

@@ -18,11 +18,11 @@ const items = [
 
 export default function VisionMission() {
   return (
-    <div className="container mx-auto mt-20 ">
-      <h2 className="titleCustom text-4xl font-bold text-center text-[#14462C]">OUR VISION & MISSION</h2>
-      <p className="text-center bodyCustom text-gray-600 mt-2 mb-10">Clear purpose and direction that guide everything we do</p>
+    <div className="container mx-auto mt-20 px-6">
+      <h2 className="titleCustom text-3xl sm:text-4xl md:text-4xl  font-bold text-center text-[#14462C]">OUR VISION & MISSION</h2>
+      <p className="text-center text-sm sm:text-base bodyCustom text-gray-600 mt-2 mb-10">Clear purpose and direction that guide everything we do</p>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {items.map((item, i) => {
           const Icon = item.icon
           return (
@@ -31,18 +31,17 @@ export default function VisionMission() {
                 <div className="p-3 rounded-xl bg-[#14462C]/10 text-[#14462C]">
                   <Icon size={28} />
                 </div>
-                <h3 className="text-xl titleCustom font-semibold text-gray-800">{item.title}</h3>
+                <h3 className="text-lg sm:text-xl titleCustom font-semibold text-gray-800">{item.title}</h3>
               </div>
 
-              {/* Kalau Mission berupa list */}
               {Array.isArray(item.desc) ? (
-                <ul className="space-y-3 bodyCustom text-gray-600 leading-relaxed list-disc list-inside text-sm">
+                <ul className="space-y-3 bodyCustom text-gray-600 leading-relaxed list-disc list-inside text-sm sm:text-base">
                   {item.desc.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-gray-600 bodyCustom leading-relaxed text-sm">{item.desc}</p>
+                <p className="text-gray-600 bodyCustom leading-relaxed text-sm sm:text-base">{item.desc}</p>
               )}
             </motion.div>
           )

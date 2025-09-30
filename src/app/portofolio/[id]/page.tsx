@@ -19,7 +19,7 @@ export default function PortfolioDetail() {
   }
 
   return (
-    <div className="bg-white pt-20">
+    <div className="bg-white pt-20 px-6">
       <div className="container mx-auto py-10">
         <motion.button onClick={handleBack} whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="my-4 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
           <MoveLeft className="w-5 h-5" /> BACK
@@ -29,8 +29,8 @@ export default function PortfolioDetail() {
         <div className="relative w-full h-[50vh] rounded-2xl overflow-hidden shadow-lg mb-10">
           <Image src={item?.image ?? ''} alt={item?.title ?? 'Portfolio'} fill priority className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-          <div className="absolute bottom-10 left-10 text-white">
-            <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-5xl font-bold leading-tight">
+          <div className="absolute bottom-10 left-6 sm:left-10 text-white">
+            <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
               {item?.title}
             </motion.h1>
           </div>
@@ -38,12 +38,12 @@ export default function PortfolioDetail() {
 
         {/* Description */}
         <div className="mx-auto text-gray-700">
-          <p className="text-md leading-relaxed mb-8 bodyCustom">{item?.text}</p>
+          <p className="text-sm sm:text-base leading-relaxed mb-8 bodyCustom">{item?.text}</p>
         </div>
 
         {/* Gallery */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold titleCustom text-[#14462C] mb-6">Gallery</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-3xl px-6 font-bold titleCustom text-[#14462C] mb-6">Gallery</h2>
           <Gallery data={item?.gallery ?? []} hidden={false} />
         </div>
       </div>

@@ -32,9 +32,9 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
   return (
     <React.Fragment>
       {hidden && (
-        <div className="text-left mx-auto px-4">
-          <h1 className="text-5xl titleCustom font-bold text-[#14462C]">PORTFOLIO</h1>
-          <p className="text-md bodyCustom leading-relaxed pt-5 text-gray-600">
+        <div className="text-left mx-auto px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl titleCustom font-bold text-[#14462C]">PORTFOLIO</h1>
+          <p className="text-sm sm:text-base md:text-base bodyCustom leading-relaxed pt-5 text-gray-600">
             Netincom stands as a visionary force in the realm of creative communication consultancy, offering fully integrated services. Our journey is driven by an unwavering commitment to excellence, a passion for innovation, and an unrelenting focus on client satisfaction.
           </p>
         </div>
@@ -49,17 +49,17 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
           >
-            <div className="relative w-full h-[30vh] overflow-hidden group">
+            <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden group">
               <Image src={item.image} alt={item.title} fill className="object-cover transform group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
             </div>
 
             <div className="p-5">
-              <h2 className="text-lg font-bold titleCustom text-[#14462C] transition">{item.title}</h2>
-              <p className="text-sm mt-2 bodyCustom">{item.desc}</p>
+              <h2 className="text-lg sm:text-lg md:text-xl font-bold titleCustom text-[#14462C] transition">{item.title}</h2>
+              <p className="text-sm sm:text-sm md:text-base mt-2 bodyCustom">{item.desc}</p>
               <div className="py-4">
                 <Link href={`/portofolio/${item.id}`}>
-                  <motion.div whileHover={{ x: 5 }} className="absolute bodyCustom bottom-3 inline-block mt-4 text-sm font-semibold text-orange-400 hover:text-orange-300 transition">
+                  <motion.div whileHover={{ x: 5 }} className="absolute bodyCustom bottom-3 inline-block mt-4  text-sm sm:text-base font-semibold text-orange-400 hover:text-orange-300 transition">
                     VISIT
                   </motion.div>
                 </Link>

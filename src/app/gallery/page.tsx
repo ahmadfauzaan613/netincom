@@ -18,10 +18,10 @@ export default function GalleryPage() {
     <>
       <Hero title="GALLERY" image={ContactUs} />
       <div className="container mx-auto my-20 px-6">
-        <h1 className=" titleCustom text-4xl text-center font-bold leading-tight text-[#14462C] mb-10">GALLERY</h1>
+        <h1 className=" titleCustom text-3xl sm:text-4xl md:text-4xl text-center font-bold leading-tight text-[#14462C] mb-10">GALLERY</h1>
 
         {/* Masonry layout */}
-        <div className="columns-4 gap-4 space-y-4 mt-10">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mt-10">
           {images.map((item, i) => (
             <motion.div
               key={i}

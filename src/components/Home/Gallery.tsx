@@ -18,15 +18,15 @@ export default function Gallery({ data, hidden }: GalleryProps) {
   return (
     <React.Fragment>
       {hidden && (
-        <div className="flex items-center justify-between">
-          <h1 className="text-5xl font-bold titleCustom text-[#14462C]">OUR GALLERY</h1>
-          <MotionLink href="/gallery" whileHover={{ x: 5 }} className="mt-1 bodyCustom inline-flex items-center gap-2 text-orange-500 font-semibold cursor-pointer hover:text-orange-600 hover:underline">
+        <div className="sm:flex items-center justify-between px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold titleCustom text-[#14462C]">OUR GALLERY</h1>
+          <MotionLink href="/gallery" whileHover={{ x: 5 }} className="mt-1 bodyCustom  inline-flex items-center gap-2 text-orange-500 font-semibold cursor-pointer hover:text-orange-600 hover:underline">
             VIEW <MoveRight size={20} />
           </MotionLink>
         </div>
       )}
 
-      <div className="grid grid-cols-4 gap-4 mt-8 mb-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-6 gap-4 mt-8 mb-7">
         {data.map((item, i) => (
           <Dialog key={i}>
             <DialogTrigger asChild>

@@ -28,11 +28,13 @@ export default function Navbar() {
       } else {
         setScrolled(window.scrollY >= targetSection.offsetTop)
       }
+
+      if (open) setOpen(false)
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [pathname])
+  }, [pathname, open])
 
   const links =
     pathname === '/'
@@ -65,7 +67,7 @@ export default function Navbar() {
           transition: { duration: 0.5, ease: 'easeInOut' },
         },
       }}
-      className="w-full z-30 py-6 fixed top-0"
+      className="w-full z-30 py-6 px-6 fixed top-0"
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
@@ -96,7 +98,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-[#0F2F1C] px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden px-6 mt-4 py-4 flex text-white flex-col gap-4">
           {links.map((link) =>
             link.isAnchor ? (
               <a key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors" onClick={() => setOpen(false)}>
