@@ -7,12 +7,13 @@ import Expertise from '@/components/Home/Expertise'
 import CompetitiveAdvantage from '@/components/CompetitiveAdvantage'
 import VisionMission from '@/components/VisionMission'
 import Services from '@/components/Services'
-import OurPartner from '@/components/OurPartner'
+import ImageCarousel from '@/components/Carousel'
 
 export default function About() {
   return (
     <>
       <Hero title="ABOUT US" image={ContactUs} />
+      <ImageCarousel />
       <div className="container mx-auto mt-40">
         <AboutUs />
         <VisionMission />
@@ -22,7 +23,6 @@ export default function About() {
       </div>
       <CompetitiveAdvantage />
       <Services />
-      <OurPartner />
       <Connection />
     </>
   )

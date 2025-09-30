@@ -3,6 +3,12 @@ import Image from 'next/image'
 import Background from '../../public/images/background.svg'
 
 export default function HeroHome() {
+  const scrollToAbout = () => {
+    const el = document.getElementById('about')
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
     <div className="relative h-screen text-center text-white ">
       <Image src={Background} alt="Background Netincom" fill priority className="object-cover -z-10" />
@@ -13,7 +19,9 @@ export default function HeroHome() {
         <p className="text-lg  leading-relaxed capitalize pt-6">
           Integrated Solution for Creative Communication is the key to help your businesses convey their message effectively and build strong connections with stakeholders. It’s where innovation and creativity meet to turn your vision into reality.
         </p>
-        <button className="mt-3 rounded-sm border  border-orange-500 text-orange-500  hover:bg-orange-600 hover:text-white px-7 py-3 font-semibold transition">EXPLORE</button>
+        <button onClick={scrollToAbout} className="mt-3 rounded-sm border  border-orange-500 text-orange-500  hover:bg-orange-600 hover:text-white px-7 py-3 font-semibold transition">
+          EXPLORE
+        </button>
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ interface HeroProps {
 
 export default function Hero({ title, image }: HeroProps) {
   return (
-    <div className="relative w-full h-[20vh] flex items-center justify-start">
+    <div className="relative w-full h-[30vh] flex items-center justify-start">
       <Image src={image} alt="Background" fill priority className="object-cover" />
       <div className="absolute inset-0 bg-black/40" />
       <div className="container mx-auto">
