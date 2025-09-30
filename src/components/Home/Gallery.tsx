@@ -5,6 +5,7 @@ import { MoveRight } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 interface GalleryProps {
   data: { src: string | StaticImageData; alt: string }[]
@@ -13,15 +14,15 @@ interface GalleryProps {
 
 export default function Gallery({ data, hidden }: GalleryProps) {
   const [selectedImage, setSelectedImage] = useState<string | StaticImageData | null>(null)
-
+  const MotionLink = motion(Link)
   return (
     <React.Fragment>
       {hidden && (
         <div className="flex items-center justify-between">
           <h1 className="text-5xl font-bold text-[#14462C]">OUR GALLERY</h1>
-          <motion.a whileHover={{ x: 5 }} className="mt-1 inline-flex items-center gap-2 text-orange-500 font-semibold cursor-pointer hover:text-orange-600 hover:underline">
+          <MotionLink href="/gallery" whileHover={{ x: 5 }} className="mt-1 inline-flex items-center gap-2 text-orange-500 font-semibold cursor-pointer hover:text-orange-600 hover:underline">
             VIEW <MoveRight size={20} />
-          </motion.a>
+          </MotionLink>
         </div>
       )}
 

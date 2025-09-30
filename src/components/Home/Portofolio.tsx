@@ -27,11 +27,12 @@ interface PortoProps {
 
 export default function Portofolio({ data, hidden, className }: PortoProps) {
   const path = usePathname()
+  const MotionLink = motion(Link)
 
   return (
     <React.Fragment>
       {hidden && (
-        <div className="text-center max-w-3xl mx-auto px-4">
+        <div className="text-left mx-auto px-4">
           <h1 className="text-5xl font-bold text-[#14462C]">PORTFOLIO</h1>
           <p className="text-md leading-relaxed pt-5 text-gray-600">
             Netincom stands as a visionary force in the realm of creative communication consultancy, offering fully integrated services. Our journey is driven by an unwavering commitment to excellence, a passion for innovation, and an unrelenting focus on client satisfaction.
@@ -69,10 +70,10 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
       </div>
 
       {hidden && (
-        <div className="flex items-center justify-center" id="gallery">
-          <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12 rounded-md bg-transparent hover:bg-[#14462C] border border-[#14462C] text-[#14462C] hover:text-white px-12 py-3 font-semibold transition-colors duration-300">
+        <div className="flex items-center justify-center hover:text-white" id="gallery">
+          <MotionLink href="/portofolio" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12  rounded-md bg-transparent hover:bg-[#14462C] border border-[#14462C] text-[#14462C] hover:text-white px-12 py-3 font-semibold transition-colors duration-300">
             EXPLORE
-          </motion.button>
+          </MotionLink>
         </div>
       )}
     </React.Fragment>

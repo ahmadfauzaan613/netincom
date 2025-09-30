@@ -38,9 +38,9 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="container mx-auto mt-20 ">
-      <h1 className="text-3xl md:text-4xl font-bold leading-tight text-[#14462C] text-center">WHAT WE CAN DO FOR YOU</h1>
-      <p className="text-center text-gray-600 mt-3  mx-auto">
+    <div className="container mx-auto mt-20 mb-16">
+      <h1 className="text-3xl md:text-4xl font-bold leading-tight text-[#14462C] text-left">WHAT WE CAN DO FOR YOU</h1>
+      <p className="text-left text-gray-600 mt-3 pt-3 mx-auto">
         Through our integrated expertise, we transform complex corporate information into clear, compelling, and visually engaging communication materials. From regulatory-driven reports to creative brand publications, we provide end-to-end solutions that cover writing, design, photography, and
         production—ensuring every deliverable is both compliant and impactful.
       </p>

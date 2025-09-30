@@ -24,10 +24,8 @@ export default function Home() {
       <div className="bg-amber-600 p-2">
         <Expertise />
       </div>
-      <div className="bg-gray-50 mt-40">
-        <div className="container mx-auto pt-20">
-          <ServicesGrid />
-        </div>
+      <div className="container mx-auto pt-40">
+        <ServicesGrid />
       </div>
       <div id="portfolio">
         <QuoteSection />

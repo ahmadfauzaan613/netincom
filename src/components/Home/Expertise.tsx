@@ -1,7 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { PenTool, Camera, Printer, Palette } from 'lucide-react'
+import { PenTool, Camera, Printer, Palette, MoveRight } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const expertiseList = [
   {
@@ -27,9 +29,10 @@ const expertiseList = [
 ]
 
 export default function Expertise() {
+  const MotionLink = motion(Link)
+  const path = usePathname()
   return (
-    <div className="container mx-auto my-20 ">
-      {/* Header */}
+    <div className="container mx-auto my-10">
       <div className="text-center max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-white">OUR EXPERTISE</h1>
         <p className="pt-3 text-white">
@@ -43,17 +46,19 @@ export default function Expertise() {
           const Icon = item.icon
           return (
             <motion.div key={index} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: index * 0.15 }} viewport={{ once: true }} className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow border border-gray-100">
-              {/* Icon */}
               <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-[#14462C]/10 text-[#14462C] mb-6 mx-auto">
                 <Icon size={32} />
               </div>
-
-              {/* Content */}
               <h2 className="text-lg font-semibold text-gray-800 text-center">{item.title}</h2>
-              <p className="text-gray-600 leading-relaxed mt-3 text-sm text-center">{item.desc}</p>
+              <p className="text-gray-600 leading-relaxed mt-3 text-sm text-center pt-3">{item.desc}</p>
             </motion.div>
           )
         })}
+      </div>
+      <div className={`${path !== '/' && 'hidden'} flex items-center justify-center text-white`}>
+        <MotionLink href="/about" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-10  rounded-sm inline-block  bg-[#14462C]  px-10 py-3 font-semibold transition">
+          EXPLORE
+        </MotionLink>
       </div>
     </div>
   )

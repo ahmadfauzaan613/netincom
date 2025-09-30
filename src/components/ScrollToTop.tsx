@@ -2,20 +2,34 @@
 
 import { useEffect, useState } from 'react'
 import { ChevronUp } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 export default function ScrollToTop() {
   const [show, setShow] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
-      const aboutSection = document.getElementById('about')
-      if (!aboutSection) return
-      setShow(window.scrollY > aboutSection.offsetTop)
+      let targetSection: HTMLElement | null = null
+
+      if (pathname === '/') {
+        targetSection = document.getElementById('about')
+      } else {
+        targetSection = document.getElementById('hero')
+      }
+
+      if (!targetSection) return
+
+      if (window.scrollY === 0) {
+        setShow(false) // balik ke paling atas → tombol hilang
+      } else {
+        setShow(window.scrollY >= targetSection.offsetTop)
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [pathname])
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })

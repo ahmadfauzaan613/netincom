@@ -5,9 +5,11 @@ import { Download, MoveRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import about from '../../../public/images/about2.svg'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 export default function AboutUs() {
   const path = usePathname()
+  const MotionLink = motion(Link)
   return (
     <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 my-32 items-center px-6 md:px-16`}>
       <motion.div initial={{ opacity: 0, x: -40 }} {...(path === '/' ? { whileInView: { opacity: 1, x: 0 }, viewport: { once: true } } : { animate: { opacity: 1, x: 0 } })} transition={{ duration: 0.8, ease: 'easeOut' }} className={`${path === '/' ? 'w-full md:w-10/12' : 'w-full md:w-11/12'}`}>
@@ -17,9 +19,9 @@ export default function AboutUs() {
           committed to delivering topnotch communication solutions that empower businesses to communicate effectively and leave a lasting impression on their audience.
         </p>
         {path === '/' ? (
-          <motion.a whileHover={{ x: 5 }} className="mt-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
+          <MotionLink href="/about" whileHover={{ x: 5 }} className="mt-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
             LEARN MORE <MoveRight className="w-5 h-5" />
-          </motion.a>
+          </MotionLink>
         ) : (
           <motion.a whileHover={{ x: 5 }} className="mt-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
             DOWNLOAD PORTFOLIO <Download className="w-5 h-5" />

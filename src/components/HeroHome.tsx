@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Background from '../../public/images/background.svg'
+import { motion } from 'framer-motion'
 
 export default function HeroHome() {
   const scrollToAbout = () => {
@@ -19,9 +20,9 @@ export default function HeroHome() {
         <p className="text-lg  leading-relaxed capitalize pt-6">
           Integrated Solution for Creative Communication is the key to help your businesses convey their message effectively and build strong connections with stakeholders. It’s where innovation and creativity meet to turn your vision into reality.
         </p>
-        <button onClick={scrollToAbout} className="mt-3 rounded-sm border  border-orange-500 text-orange-500  hover:bg-orange-600 hover:text-white px-7 py-3 font-semibold transition">
+        <motion.button onClick={scrollToAbout} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-3 rounded-sm border  border-orange-500 text-orange-500  hover:bg-orange-600 hover:text-white px-7 py-3 font-semibold transition">
           EXPLORE
-        </button>
+        </motion.button>
       </div>
     </div>
   )

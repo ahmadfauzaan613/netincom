@@ -13,11 +13,23 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (pathname !== '/') return
-      const aboutSection = document.getElementById('about')
-      if (!aboutSection) return
-      setScrolled(window.scrollY >= aboutSection.offsetTop)
+      let targetSection: HTMLElement | null = null
+
+      if (pathname === '/') {
+        targetSection = document.getElementById('about')
+      } else {
+        targetSection = document.getElementById('hero')
+      }
+
+      if (!targetSection) return
+
+      if (window.scrollY === 0) {
+        setScrolled(false)
+      } else {
+        setScrolled(window.scrollY >= targetSection.offsetTop)
+      }
     }
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [pathname])
@@ -74,7 +86,7 @@ export default function Navbar() {
               )
             )}
           </div>
-          {/* Mobile Toggle */}
+
           <div className="md:hidden">
             <button onClick={() => setOpen(!open)}>
               <Menu className="w-6 h-6 text-white" />
@@ -83,7 +95,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-[#0F2F1C] px-6 py-4 flex flex-col gap-4">
           {links.map((link) =>

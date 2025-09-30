@@ -21,7 +21,7 @@ export default function GalleryPage() {
         <h1 className="text-2xl md:text-4xl text-center font-bold leading-tight text-[#14462C] mb-10">GALLERY</h1>
 
         {/* Masonry layout */}
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mt-10">
           {images.map((item, i) => (
             <motion.div
               key={i}
