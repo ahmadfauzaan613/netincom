@@ -30,7 +30,7 @@ export default function PortfolioDetail() {
           <Image src={item?.image ?? ''} alt={item?.title ?? 'Portfolio'} fill priority className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
           <div className="absolute bottom-10 left-10 text-white">
-            <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-3xl md:text-5xl font-bold leading-tight">
+            <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-5xl font-bold leading-tight">
               {item?.title}
             </motion.h1>
           </div>
@@ -43,7 +43,7 @@ export default function PortfolioDetail() {
 
         {/* Gallery */}
         <div className="mt-16">
-          <h2 className="text-2xl md:text-3xl font-bold titleCustom text-[#14462C] mb-6">Gallery</h2>
+          <h2 className="text-3xl font-bold titleCustom text-[#14462C] mb-6">Gallery</h2>
           <Gallery data={item?.gallery ?? []} hidden={false} />
         </div>
       </div>

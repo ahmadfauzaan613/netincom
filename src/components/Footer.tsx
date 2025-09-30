@@ -12,14 +12,14 @@ export default function Footer() {
   }, [])
   return (
     <footer className="bg-gradient-to-r from-[#14462C] to-[#0F2F1C] text-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-start justify-between pt-10 gap-10 md:gap-0">
-        <div className="flex flex-col items-center md:items-start gap-6">
+      <div className="container mx-auto flex flex-row items-start justify-between pt-10 gap-0">
+        <div className="flex flex-col items-start gap-6">
           <Image src="/images/Netincom_white.png" alt="Logo PT. Net Integra Komunikasi" width={180} height={180} className="hover:scale-105 transition-transform duration-300" />
-          <h1 className="font-semibold titleCustom text-md tracking-wide text-center md:text-left">PT. Net Integra Komunikasi</h1>
+          <h1 className="font-semibold titleCustom text-md tracking-wide text-left">PT. Net Integra Komunikasi</h1>
         </div>
 
         <div>
-          <div className="flex gap-4 items-center md:items-end pt-10">
+          <div className="flex gap-4 items-end pt-10">
             {[
               { icon: <Phone size={18} />, link: 'https://wa.me/6281234567890' },
               { icon: <Instagram size={18} />, link: '#' },

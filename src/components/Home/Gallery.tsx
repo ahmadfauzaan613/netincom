@@ -26,7 +26,7 @@ export default function Gallery({ data, hidden }: GalleryProps) {
         </div>
       )}
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8 mb-7">
+      <div className="grid grid-cols-4 gap-4 mt-8 mb-7">
         {data.map((item, i) => (
           <Dialog key={i}>
             <DialogTrigger asChild>

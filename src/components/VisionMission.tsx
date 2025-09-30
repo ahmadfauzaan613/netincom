@@ -19,10 +19,10 @@ const items = [
 export default function VisionMission() {
   return (
     <div className="container mx-auto mt-20 ">
-      <h2 className="text-3xl titleCustom md:text-4xl font-bold text-center text-[#14462C]">OUR VISION & MISSION</h2>
+      <h2 className="titleCustom text-4xl font-bold text-center text-[#14462C]">OUR VISION & MISSION</h2>
       <p className="text-center bodyCustom text-gray-600 mt-2 mb-10">Clear purpose and direction that guide everything we do</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8">
         {items.map((item, i) => {
           const Icon = item.icon
           return (

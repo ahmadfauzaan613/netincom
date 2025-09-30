@@ -15,7 +15,7 @@ export default function Contact() {
 
       {/* Contact Section */}
       <div className="relative bg-gray-50 pt-20">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <div className="container mx-auto grid grid-cols-2 gap-10 items-start">
           {/* Contact Info */}
           <div className="p-6 bg-white rounded-2xl shadow-lg">
             <h2 className="text-3xl titleCustom font-bold text-[#14462C]">Get In Touch</h2>
@@ -29,8 +29,6 @@ export default function Contact() {
                 Jl. Wijaya II, Blok G No.15 <br />
                 Kebayoran Baru, Jakarta Selatan
               </p>
-              <p className="bodyCustom"></p>
-              <p className="bodyCustom"></p>
             </div>
 
             {/* Workshop */}
@@ -74,7 +72,7 @@ export default function Contact() {
         </div>
 
         {/* Google Maps */}
-        <div className="mt-16 h-[40vh] md:h-[60vh] rounded-xl overflow-hidden shadow-lg">
+        <div className="mt-16 h-[60vh] rounded-xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.123456789!2d106.816666!3d-6.200000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sNetincom!5e0!3m2!1sen!2sid!4v1695899999999!5m2!1sen!2sid"
             width="100%"

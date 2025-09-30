@@ -17,9 +17,9 @@ export default function OurPartner() {
   return (
     <div className="bg-gray-50">
       <div className="container mx-auto py-20 ">
-        <h1 className="text-2xl titleCustom md:text-4xl text-center font-bold leading-tight text-[#14462C]">OUR PARTNER</h1>
+        <h1 className="titleCustom text-4xl text-center font-bold leading-tight text-[#14462C]">OUR PARTNER</h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10 items-center">
+        <div className="grid grid-cols-4 gap-8 mt-10 items-center">
           {partners.map((partner, index) => (
             <div key={index} className="relative w-full h-20 flex items-center justify-center">
               <Image src={partner.src} alt={partner.alt} fill className="object-contain" />

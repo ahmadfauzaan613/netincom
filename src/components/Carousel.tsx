@@ -18,26 +18,16 @@ export default function ClientCarousel() {
         }),
       ]}
     >
-      <CarouselContent className="items-center">
+      <CarouselContent>
         {carouselData.map((item) => (
-          <CarouselItem
-            key={item.id}
-            className="
-              basis-full        /* mobile: 1 item */
-              sm:basis-1/2     /* ≥640px: 2 item */
-              md:basis-1/3     /* ≥768px: 3 item */
-              lg:basis-1/4     /* ≥1024px: 4 item */
-              flex items-center justify-center
-            "
-          >
-            <div className="relative w-32 h-16 sm:w-36 sm:h-20 lg:w-40 lg:h-24 p-2 flex items-center justify-center">
+          <CarouselItem key={item.id} className="basis-1/2 md:basis-1/4 flex items-center justify-center">
+            <div className="relative w-40 h-20 p-2 flex items-center justify-center">
               <Image src={item.src} alt={item.alt} fill className="object-contain" priority />
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
 
-      {/* Kalau mau aktifin manual control */}
       {/* 
       <CarouselPrevious className="bg-green-500 hover:bg-green-600 text-white rounded-full" />
       <CarouselNext className="bg-green-500 hover:bg-green-600 text-white rounded-full" />
