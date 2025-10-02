@@ -5,7 +5,7 @@ import Connection from '@/components/Home/Connection'
 import AboutUs from '@/components/Home/AboutUs'
 import Expertise from '@/components/Home/Expertise'
 import CompetitiveAdvantage from '@/components/CompetitiveAdvantage'
-import VisionMission from '@/components/VisionMission'
+// import VisionMission from '@/components/VisionMission'
 import Services from '@/components/Services'
 import ImageCarousel from '@/components/Carousel'
 
@@ -16,7 +16,7 @@ export default function About() {
       <ImageCarousel />
       <div className="container mx-auto mt-40">
         <AboutUs />
-        <VisionMission />
+        {/* <VisionMission /> */}
       </div>
       <div className="bg-amber-600 p-2 my-20">
         <Expertise />
