@@ -24,7 +24,7 @@ export default function AboutUs() {
           </MotionLink>
         ) : (
           <motion.a whileHover={{ x: 5 }} className="mt-4 sm:mt-6 bodyCustom inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
-            DOWNLOAD PORTFOLIO <Download className="w-5 h-5" />
+            DOWNLOAD COMPANY PROFILE <Download className="w-5 h-5" />
           </motion.a>
         )}
       </motion.div>

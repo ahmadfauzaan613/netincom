@@ -21,8 +21,12 @@ export default function About() {
       <div className="bg-amber-600 p-2 my-20">
         <Expertise />
       </div>
-      <CompetitiveAdvantage />
-      <Services />
+      <div className="mb-20">
+        <Services />
+      </div>
+      <div className="mb-20">
+        <CompetitiveAdvantage />
+      </div>
       <Connection />
     </>
   )

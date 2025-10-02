@@ -14,8 +14,8 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-[#14462C] to-[#0F2F1C] text-white">
       <div className="container mx-auto flex flex-col lg:flex-row px-6  items-start justify-between pt-10 gap-0">
         <div className="flex flex-col items-start gap-6">
-          <Image src="/images/Netincom_white.png" alt="Logo PT. Net Integra Komunikasi" width={180} height={180} className="hover:scale-105 transition-transform duration-300" />
-          <h1 className="font-semibold titleCustom text-md tracking-wide text-left">PT. Net Integra Komunikasi</h1>
+          <Image src="/images/Netincom_white.png" alt="Logo PT Net Integra Komunikasi" width={180} height={180} className="hover:scale-105 transition-transform duration-300" />
+          <h1 className="font-semibold titleCustom text-md tracking-wide text-left">PT Net Integra Komunikasi</h1>
         </div>
 
         <div className="flex flex-col gap-6  w-full lg:w-auto">
@@ -54,7 +54,7 @@ export default function Footer() {
 
       <div className="border-t border-white/20 mb-4"></div>
 
-      <p className="text-center text-white bodyCustom text-sm pb-4">&copy; {year ?? ''} PT. Net Integra Komunikasi. All rights reserved.</p>
+      <p className="text-center text-white bodyCustom text-sm pb-4">&copy; {year ?? ''} PT Net Integra Komunikasi. All rights reserved.</p>
     </footer>
   )
 }

@@ -21,23 +21,12 @@ export default function Home() {
       <div className="container mx-auto mt-40">
         <AboutUs />
       </div>
-<<<<<<< Updated upstream
       <div className="bg-amber-600 p-2">
         <Expertise />
       </div>
       <div className="container mx-auto pt-40">
         <ServicesGrid />
-=======
-      <div className="bg-gray-50 my-40">
-        <div className="container mx-auto pt-20">
-          <ServicesGrid />
-        </div>
->>>>>>> Stashed changes
       </div>
-      <div className="bg-amber-600 p-2">
-        <Expertise />
-      </div>
-
       <div id="portfolio">
         <QuoteSection />
       </div>
