@@ -15,17 +15,18 @@ export default function Home() {
   return (
     <React.Fragment>
       <HeroHome />
-      <div className="bg-white" id="about">
-        <ImageCarousel />
-      </div>
+      <div id="about"></div>
       <div className="container mx-auto mt-40">
         <AboutUs />
       </div>
       <div className="bg-amber-600 p-2">
         <Expertise />
       </div>
-      <div className="container mx-auto pt-40">
+      <div className="container mx-auto pt-40  mb-20">
         <ServicesGrid />
+      </div>
+      <div className="bg-white">
+        <ImageCarousel />
       </div>
       <div id="portfolio">
         <QuoteSection />

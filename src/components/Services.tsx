@@ -1,31 +1,21 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FileText, ClipboardCheck, Book, BookOpen, Calendar, Camera } from 'lucide-react'
+import { FileText, ClipboardCheck, Calendar, Camera } from 'lucide-react'
 
 const services = [
   {
-    title: 'ANNUAL & SUSTAINABILITY REPORT',
+    title: 'ANNUAL REPORT & SUSTAINABILITY REPORT',
     desc: 'We specialize in preparing Annual and Sustainability Reports that comply with SEOJK.016, GRI, SASB, IIRC, and other frameworks—combining regulatory accuracy with engaging, creative design.',
     icon: FileText,
   },
   {
-    title: 'RJPP',
+    title: 'OTHER CORPORATE BOOKS',
     desc: 'We assist companies, especially SOEs, in preparing Long-term Corporate Plans (RJPP) that comply with regulator guidelines and clearly communicate strategic direction.',
     icon: ClipboardCheck,
   },
   {
-    title: 'MANUAL GCG',
-    desc: 'We develop Good Corporate Governance (GCG) manuals that are practical, comprehensive, and aligned with the latest governance standards.',
-    icon: Book,
-  },
-  {
-    title: 'BOOKLET & MAGAZINE',
-    desc: 'From commemorative books and internal magazines to stakeholder updates, we deliver creative publications tailored to corporate needs.',
-    icon: BookOpen,
-  },
-  {
-    title: 'CALENDAR DESIGN & PRODUCTION',
+    title: 'CALENDAR DESIGN AND PRODUCTION',
     desc: 'Corporate calendars designed to strengthen your brand identity while remaining practical and creative throughout the year.',
     icon: Calendar,
   },
@@ -45,7 +35,7 @@ export default function Services() {
         production—ensuring every deliverable is both compliant and impactful.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
         {services.map((item, i) => {
           const Icon = item.icon
           return (

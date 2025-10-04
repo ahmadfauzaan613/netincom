@@ -6,7 +6,7 @@ import Town from '../../../public/images/town.svg'
 
 export default function QuoteSection() {
   return (
-    <div className="relative w-full h-[25vh] my-10">
+    <div className="relative w-full h-[25vh]">
       <Image src={Town} alt="Background Netincom" fill priority className="object-cover -z-10" />
       <div className="absolute inset-0 bg-black/50 -z-10" />
       <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">

@@ -2,14 +2,13 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function ServicesGrid() {
+  const MotionLink = motion(Link)
   const services = [
     { title: 'ANNUAL REPORT & SUSTAINABILITY REPORT', image: '/images/nobook2-cover.svg' },
-    { title: 'COMPANY PROFILE', image: '/images/nobook2-cover.svg' },
-    { title: 'MANUAL GCG', image: '/images/nobook2-cover.svg' },
-    { title: 'RENCANA JANGKA PANJANG PERUSAHAAN (RJPP)', image: '/images/nobook2-cover.svg' },
-    { title: 'OTHER BOOKLET & MAGAZINE', image: '/images/nobook2-cover.svg' },
+    { title: 'OTHER CORPORATE BOOKS', image: '/images/nobook2-cover.svg' },
     { title: 'CALENDAR DESIGN AND PRODUCTION', image: '/images/nobook2-cover.svg' },
     { title: 'PHOTO AND VIDEO', image: '/images/nobook2-cover.svg' },
   ]
@@ -38,10 +37,10 @@ export default function ServicesGrid() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center">
-        <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12 rounded-md bodyCustom bg-transparent hover:bg-[#14462C] border border-[#14462C] text-[#14462C] hover:text-white px-10 py-3 font-semibold transition-colors duration-300">
+      <div className="flex items-center justify-center text-[#14462C] hover:text-white">
+        <MotionLink href="/about" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-5 mb-12 rounded-md bodyCustom bg-transparent hover:bg-[#14462C] border border-[#14462C]   px-10 py-3 font-semibold transition-colors duration-300">
           EXPLORE
-        </motion.button>
+        </MotionLink>
       </div>
     </>
   )
