@@ -34,7 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <div className="fixed bottom-8 right-8 z-50">
-          <Image src="/images/whatsapp.png" alt="Whatsapp" width={48} height={48} className="cursor-pointer" />
+          <Image src="/images/whatsapp2.png" alt="Whatsapp" width={45} height={45} className="cursor-pointer" />
         </div>
         <ScrollToTop />
         <Footer />

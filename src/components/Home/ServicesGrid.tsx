@@ -7,10 +7,10 @@ import Link from 'next/link'
 export default function ServicesGrid() {
   const MotionLink = motion(Link)
   const services = [
-    { title: 'ANNUAL REPORT & SUSTAINABILITY REPORT', image: '/images/nobook2-cover.svg' },
-    { title: 'OTHER CORPORATE BOOKS', image: '/images/nobook2-cover.svg' },
-    { title: 'CALENDAR DESIGN AND PRODUCTION', image: '/images/nobook2-cover.svg' },
-    { title: 'PHOTO AND VIDEO', image: '/images/nobook2-cover.svg' },
+    { title: 'ANNUAL REPORT & SUSTAINABILITY REPORT', image: '/images/Links/mockup_ar_pnre_isi.png' },
+    { title: 'OTHER CORPORATE BOOKS', image: '/images/Links/gcg doss mockup.png' },
+    { title: 'CALENDAR DESIGN AND PRODUCTION', image: '/images/Links/[IPC] Mockup Sample Calendar 2025.jpg' },
+    { title: 'PHOTO AND VIDEO', image: '/images/Links/VIDEO COMPRO PDSI.jpg' },
   ]
 
   return (

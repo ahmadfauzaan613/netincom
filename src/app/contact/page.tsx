@@ -15,7 +15,7 @@ export default function Contact() {
 
       {/* Contact Section */}
       <div className="relative bg-gray-50 pt-20 px-6">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start my-20">
           {/* Contact Info */}
           <div className="p-6 bg-white rounded-2xl shadow-lg">
             <h2 className="text-2xl sm:text-3xl titleCustom font-bold text-[#14462C]">Get In Touch</h2>
