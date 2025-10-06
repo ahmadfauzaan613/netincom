@@ -19,8 +19,10 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Netincom',
-  description: 'Integrated Solution for Creative Communication',
+  title: 'Netincom - Integrated Solution for Creative Communication',
+  description:
+    'PT Net Integra Komunikasi (Netincom) adalah konsultan komunikasi kreatif terintegrasi yang mengkhususkan diri dalam pembuatan Laporan Tahunan, Laporan Keberlanjutan, RJPP, Manual GCG, dan materi komunikasi korporat lainnya. Melayani perusahaan publik dan BUMN dengan tim berpengalaman, penguasaan regulasi, dan layanan end-to-end dari penulisan, desain, fotografi, hingga produksi.',
+  keywords: 'laporan tahunan, laporan keberlanjutan, annual report, sustainability report, RJPP, GCG manual, desain korporat, fotografi perusahaan, videografi, PT Net Integra Komunikasi, Netincom, komunikasi kreatif',
 }
 
 export default function RootLayout({
