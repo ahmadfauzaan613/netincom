@@ -21,12 +21,12 @@ export default function PortfolioDetail() {
   return (
     <div className="bg-white pt-20 px-6">
       <div className="container mx-auto py-10">
-        <motion.button onClick={handleBack} whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="my-4 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
+        <motion.button onClick={handleBack} whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="my-4 mx-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
           <MoveLeft className="w-5 h-5" /> BACK
         </motion.button>
 
         {/* Hero Image with Overlay */}
-        <div className="relative w-full h-[50vh] rounded-2xl overflow-hidden shadow-lg mb-10">
+        <div className="mx-6 relative w-full h-[50vh] rounded-2xl overflow-hidden shadow-lg mb-10">
           <Image src={item?.image ?? ''} alt={item?.title ?? 'Portfolio'} fill priority className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
           <div className="absolute bottom-10 left-6 sm:left-10 text-white">
@@ -37,7 +37,7 @@ export default function PortfolioDetail() {
         </div>
 
         {/* Description */}
-        <div className="mx-auto text-gray-700">
+        <div className="mx-auto text-gray-700 px-6">
           <p className="text-sm sm:text-base leading-relaxed mb-8 bodyCustom">{item?.text}</p>
         </div>
 

@@ -4,7 +4,7 @@ import * as React from 'react'
 import Image from 'next/image'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import AutoScroll from 'embla-carousel-auto-scroll'
-import { carouselData } from '@/data/carousel'
+import { PartnerData } from '@/data/Partner'
 
 export default function ClientCarousel() {
   return (
@@ -19,7 +19,7 @@ export default function ClientCarousel() {
       ]}
     >
       <CarouselContent>
-        {carouselData.map((item) => (
+        {PartnerData.map((item) => (
           <CarouselItem key={item.id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 flex items-center justify-center">
             <div className="relative w-40 h-20 p-2 flex items-center justify-center">
               <Image src={item.src} alt={item.alt} fill className="object-contain" priority />

@@ -10,18 +10,33 @@ const services = [
     icon: FileText,
   },
   {
-    title: 'OTHER CORPORATE BOOKS',
-    desc: 'We assist companies, especially SOEs, in preparing Long-term Corporate Plans (RJPP) that comply with regulator guidelines and clearly communicate strategic direction.',
+    title: 'COMPANY PROFILE',
+    desc: 'inventore rem magnam reiciendis, quos debitis similique nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit necessitatibus ipsam sit beatae et reiciendis placeat cum! Quaerat sunt aliquid molestiae, nobis pariatur amet explicabo dignissimos voluptatem quidem dicta?',
+    icon: FileText,
+  },
+  {
+    title: 'MANUAL GCG',
+    desc: 'Good Corporate Governance (GCG) manuals are critical for building credibility and ensuring accountability. Supported by a team of experts in GCG and updated regulatory requirements, we produce manuals that are practical, comprehensive, and aligned with the latest governance standards.',
+    icon: ClipboardCheck,
+  },
+  {
+    title: 'RENCANA JANGKA PANJANG PERUSAHAAN (RJPP)',
+    desc: 'We assist companies, especially state-owned enterprises, in preparing their Long-term Corporate Plan (RJPP). Our team ensures that each long-term plan complies with regulator guidelines, providing a structured roadmap that clearly communicates strategic direction and growth priorities to stakeholders.',
+    icon: ClipboardCheck,
+  },
+  {
+    title: 'OTHER BOOKLET & MAGAZINE',
+    desc: 'Beyond reports, we offer a broad range of publishing services for corporations. From commemorative books and internal magazines to stakeholder updates and thematic publications, we deliver engaging content and designs tailored to your communication needs.',
     icon: ClipboardCheck,
   },
   {
     title: 'CALENDAR DESIGN AND PRODUCTION',
-    desc: 'Corporate calendars designed to strengthen your brand identity while remaining practical and creative throughout the year.',
+    desc: 'Corporate calendars are not just functional—they are branding tools. We design and produce calendars that reflect your corporate identity, combining practicality with creativity to ensure your brand remains visible throughout the year.',
     icon: Calendar,
   },
   {
     title: 'PHOTO & VIDEO',
-    desc: 'Professional photography and videography services—from executive portraits to storytelling videos that elevate your corporate communication.',
+    desc: 'We provide professional photography and videography services to strengthen your corporate communication. From executive portraits and facility shoots to event documentation and brand storytelling videos, our visuals are crafted to leave a lasting impression.',
     icon: Camera,
   },
 ]
@@ -35,7 +50,7 @@ export default function Services() {
         production—ensuring every deliverable is both compliant and impactful.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {services.map((item, i) => {
           const Icon = item.icon
           return (

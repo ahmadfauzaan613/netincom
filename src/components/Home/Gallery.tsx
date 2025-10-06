@@ -3,22 +3,27 @@
 import React, { useState } from 'react'
 import { MoveRight } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+interface GalleryItem {
+  src: string | StaticImageData
+  alt: string
+  desc: string
+}
+
 interface GalleryProps {
-  data: { src: string | StaticImageData; alt: string }[]
+  data: GalleryItem[]
   hidden: boolean
 }
 
 export default function Gallery({ data, hidden }: GalleryProps) {
-  const [selectedImage, setSelectedImage] = useState<string | StaticImageData | null>(null)
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
   const pathname = usePathname()
   const MotionLink = motion(Link)
 
-  // 🔹 Jika di halaman "/", hanya ambil 8 data teratas
   const displayedData = pathname === '/' ? data.slice(0, 8) : data
 
   return (
@@ -36,19 +41,15 @@ export default function Gallery({ data, hidden }: GalleryProps) {
         {displayedData.map((item, i) => (
           <Dialog key={i}>
             <DialogTrigger asChild>
-              <div className="relative w-full h-[25vh] rounded-lg overflow-hidden group shadow-md cursor-pointer" onClick={() => setSelectedImage(item.src)}>
+              <div className="relative w-full h-[25vh] rounded-lg overflow-hidden group shadow-md cursor-pointer" onClick={() => setSelectedImage(item)}>
                 <Image src={item.src} alt={item.alt} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                {/* <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500" /> */}
               </div>
             </DialogTrigger>
 
-            <DialogContent className="max-w-5xl p-0 bg-transparent border-0 shadow-none">
-              <DialogTitle></DialogTitle>
-              {selectedImage && (
-                <div className="relative w-full h-[80vh]">
-                  <Image src={selectedImage} alt="Preview" fill className="object-contain rounded-lg" />
-                </div>
-              )}
+            <DialogContent className=" bg-white p-0 rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+              <DialogTitle className="sr-only">Preview Image</DialogTitle>
+              {selectedImage && <Image src={selectedImage.src} alt={selectedImage.alt} width={10000} height={10000} />}
+              {selectedImage && <DialogDescription className="text-sm sm:text-base md:text-base leading-relaxed bodyCustom px-4">{selectedImage?.desc}</DialogDescription>}
             </DialogContent>
           </Dialog>
         ))}

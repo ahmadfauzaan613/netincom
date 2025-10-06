@@ -16,20 +16,29 @@ interface OurPartnershipProps {
 export default function OurPartnership({ data }: OurPartnershipProps) {
   return (
     <section className="bg-white py-10 sm:py-14">
-      <div className="container mx-auto px-6">
-        {/* Title */}
+      <div className="container mx-auto px-4 sm:px-6">
+        {/* 🏷️ Title */}
         <motion.h1 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} viewport={{ once: true }} className="titleCustom text-3xl sm:text-4xl md:text-5xl font-bold text-[#14462C] text-center">
           OUR CLIENTS
         </motion.h1>
 
-        {/* Grid */}
+        {/* 🧩 Grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12"
+          className="
+            grid 
+            grid-cols-2 
+            sm:grid-cols-3 
+            md:grid-cols-4 
+            lg:grid-cols-5 
+            xl:grid-cols-6 
+            gap-4 sm:gap-6 lg:gap-8 
+            mt-10 sm:mt-12
+          "
           initial="hidden"
           whileInView="visible"
           variants={{
             visible: {
-              transition: { staggerChildren: 0.15 },
+              transition: { staggerChildren: 0.12 },
             },
           }}
           viewport={{ once: true }}
@@ -41,11 +50,11 @@ export default function OurPartnership({ data }: OurPartnershipProps) {
                 hidden: { opacity: 0, y: 30 },
                 visible: { opacity: 1, y: 0 },
               }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
+              transition={{ duration: 0.4, ease: 'easeOut' }}
               whileHover={{ scale: 1.05 }}
-              className="relative w-full h-24 sm:h-28 md:h-32 lg:h-36 rounded-xl overflow-hidden shadow-sm flex items-center justify-center"
+              className=" relative w-full h-20 sm:h-24 md:h-28 lg:h-32 flex items-center justify-center rounded-xl transition-all duration-300 "
             >
-              <Image src={item.src} alt={item.alt} fill className="object-contain p-4 transition-transform duration-500 group-hover:scale-110" />
+              <Image src={item.src} alt={item.alt} fill className="object-contain p-4 opacity-80 hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </motion.div>

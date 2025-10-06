@@ -8,7 +8,10 @@ export default function ServicesGrid() {
   const MotionLink = motion(Link)
   const services = [
     { title: 'ANNUAL REPORT & SUSTAINABILITY REPORT', image: '/images/Links/mockup_ar_pnre_isi.png' },
-    { title: 'OTHER CORPORATE BOOKS', image: '/images/Links/gcg doss mockup.png' },
+    { title: 'COMPANY PROFILE', image: '/images/Links/po mockup_1.png' },
+    { title: 'MANUAL GCG', image: '/images/Links/gcg doss mockup.png' },
+    { title: 'RENCANA JANGKA PANJANG PERUSAHAAN (RJPP)', image: '/images/Links/RJPP.png' },
+    { title: 'OTHER BOOKLET & MAGAZINE', image: '/images/Links/PO mockup.png' },
     { title: 'CALENDAR DESIGN AND PRODUCTION', image: '/images/Links/[IPC] Mockup Sample Calendar 2025.jpg' },
     { title: 'PHOTO AND VIDEO', image: '/images/Links/VIDEO COMPRO PDSI.jpg' },
   ]
@@ -26,7 +29,7 @@ export default function ServicesGrid() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-6 gap-6 items-start my-10">
         {services.map((service, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: i * 0.1 }} viewport={{ once: true }} className="relative w-full h-[25vh] rounded-lg overflow-hidden group shadow-md">
-            <Image src={service.image} alt={service.title} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+            <Image src={service.image} alt={service.title} fill className="object-cover transition-transform duration-500 scale-125 group-hover:scale-150 " />
 
             <div className="absolute inset-0 bg-[#14462C]/70 group-hover:bg-[#14462C]/90 transition"></div>
 

@@ -8,8 +8,8 @@ import Gallery from '@/components/Home/Gallery'
 import QuoteSection from '@/components/Home/QuoteSection'
 import Connection from '@/components/Home/Connection'
 import React from 'react'
+import { portfolioItems } from '@/data/portfolio'
 import { imagesData } from '@/data/images'
-import { portfolioHome } from '@/data/portfolio'
 
 export default function Home() {
   return (
@@ -25,18 +25,18 @@ export default function Home() {
       <div className="container mx-auto pt-40  mb-20">
         <ServicesGrid />
       </div>
-      <div className="bg-white">
-        <ImageCarousel />
-      </div>
       <div id="portfolio">
         <QuoteSection />
       </div>
       <div className="container mx-auto">
-        <div className="py-20 ">
-          <Portofolio data={portfolioHome} hidden={true} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-16 px-4" />
+        <div className="py-20">
+          <Portofolio data={portfolioItems} hidden={true} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4" />
         </div>
       </div>
-      <div className="container mx-auto mb-40">
+      <div className="bg-white">
+        <ImageCarousel />
+      </div>
+      <div className="container mx-auto my-24">
         <Gallery data={imagesData} hidden={true} />
       </div>
       <Connection />

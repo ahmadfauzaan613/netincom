@@ -168,6 +168,19 @@ p {
   font-family: var(--font-body), sans-serif;
 }
 
+/* Hides scrollbar but keeps scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+
 /* ---------- Container ---------- */
 
 
