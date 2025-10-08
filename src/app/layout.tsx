@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import { Roboto, Open_Sans } from 'next/font/google'
 import ScrollToTop from '@/components/ScrollToTop'
+import Link from 'next/link'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -36,7 +37,9 @@ export default function RootLayout({
         <Navbar />
         {children}
         <div className="fixed bottom-8 right-8 z-50">
-          <Image src="/images/whatsapp2.png" alt="Whatsapp" width={45} height={45} className="cursor-pointer" />
+          <Link href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya" target="_blank">
+            <Image src="/images/whatsapp2.png" alt="Whatsapp" width={45} height={45} className="cursor-pointer" />
+          </Link>
         </div>
         <ScrollToTop />
         <Footer />

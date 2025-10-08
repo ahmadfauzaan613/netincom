@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { Instagram, Linkedin, Mail, MessageCircle, Phone } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   const [year, setYear] = React.useState<number | null>(null)
@@ -10,6 +11,26 @@ export default function Footer() {
   React.useEffect(() => {
     setYear(new Date().getFullYear())
   }, [])
+
+  const socials = [
+    {
+      icon: <Instagram size={18} />,
+      link: 'https://www.instagram.com/netincom.id',
+    },
+    {
+      icon: <Mail size={18} />,
+      link: 'mailto:netintegrakomunikasi@gmail.com',
+    },
+    {
+      icon: <MessageCircle size={18} />,
+      link: 'https://wa.me/6281234567890?text=Halo%20Netincom%2C%20saya%20ingin%20bertanya',
+    },
+    {
+      icon: <Linkedin size={18} />,
+      link: 'https://www.linkedin.com/company/netintegrakomunikasi/',
+    },
+  ]
+
   return (
     <footer className="bg-gradient-to-r from-[#14462C] to-[#0F2F1C] text-white">
       <div className="container mx-auto flex flex-col lg:flex-row px-6  items-start justify-between pt-10 gap-0">
@@ -20,33 +41,31 @@ export default function Footer() {
 
         <div className="flex flex-col gap-6  w-full lg:w-auto">
           <div className="flex gap-4 items-end sm:items-center pt-10 flex-wrap">
-            {[
-              { icon: <Phone size={18} />, link: 'https://wa.me/6281234567890' },
-              { icon: <Instagram size={18} />, link: '#' },
-              { icon: <Mail size={18} />, link: 'mailto:info@netintegra.com' },
-              { icon: <MessageCircle size={18} />, link: '#' },
-              { icon: <Linkedin size={18} />, link: '#' },
-            ].map((item, idx) => (
-              <a key={idx} href={item.link} className="p-3 bodyCustom rounded-full bg-white/10 hover:bg-green-400/20 transition-all transform hover:scale-110 shadow-sm">
+            {socials.map((item, idx) => (
+              <Link key={idx} href={item.link} target="_blank" rel="noopener noreferrer" className="p-3 bodyCustom rounded-full bg-white/10 hover:bg-green-400/20 transition-all transform hover:scale-110 shadow-sm">
                 {item.icon}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="flex flex-col sm:flex-row items-start gap-10 mt-10">
             <div>
-              <h3 className="font-semibold text-white">Marketing Office</h3>
-              <p className="bodyCustom pt-3 text-sm leading-relaxed">
-                Wijaya Grand Centre <br />
-                Jl. Wijaya II, Blok G No.15 <br />
-                Kebayoran Baru, Jakarta Selatan
-              </p>
+              <Link href="https://www.google.com/maps/place/Wijaya+Grand+Centre,+Jl.+Wijaya+II+Blok+G+No.15,+Kebayoran+Baru,+Jakarta+Selatan" target="_blank" rel="noopener noreferrer" className="flex flex-col hover:text-[#0F713B] transition">
+                <h3 className="font-semibold text-white">Marketing Office</h3>
+                <p className="bodyCustom text-sm sm:text-base">
+                  Wijaya Grand Centre <br />
+                  Jl. Wijaya II, Blok G No.15 <br />
+                  Kebayoran Baru, Jakarta Selatan
+                </p>
+              </Link>
             </div>
             <div>
-              <h3 className="font-semibold text-white">Workshop</h3>
-              <p className="bodyCustom pt-3 text-sm leading-relaxed">
-                Jl. Besakih V Blok G6 No. 26 <br />
-                Limo, Depok, Jawa Barat
-              </p>
+              <Link href="https://www.google.com/maps/place/Jl.+Besakih+V+Blok+G6+No.26,+Limo,+Depok,+Jawa+Barat" target="_blank" rel="noopener noreferrer" className="flex flex-col hover:text-[#0F713B] transition">
+                <h3 className="font-semibold text-white">Workshop</h3>
+                <p className="bodyCustom text-sm sm:text-base">
+                  Jl. Besakih V Blok G6 No. 26 <br />
+                  Limo, Depok, Jawa Barat
+                </p>
+              </Link>
             </div>
           </div>
         </div>

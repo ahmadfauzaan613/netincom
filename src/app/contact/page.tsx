@@ -2,10 +2,11 @@
 
 import Hero from '@/components/Hero'
 import React from 'react'
-import ContactHero from '../../../public/images/contact.svg'
-import { Instagram, Linkedin, Mail, MessageCircle, Phone } from 'lucide-react'
+import ContactHero from '../../../public/images/Links/still-life-graphic-design-studio.jpg'
+import { Instagram, Linkedin, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
 import Image from 'next/image'
-import ContactUs from '../../../public/images/contactUs.svg'
+import ContactUs from '../../../public/images/Links/modern-business-building-scenery-touching-sky.jpg'
+import Link from 'next/link'
 
 export default function Contact() {
   return (
@@ -22,46 +23,50 @@ export default function Contact() {
             <p className="text-gray-600 text-sm sm:text-base bodyCustom mt-3 mb-6">Reach out to us through our social media or contact details below:</p>
 
             {/* Marketing Office */}
-            <div className="mb-6">
-              <h3 className="font-semibold text-[#14462C]">Marketing Office</h3>
-              <p className="bodyCustom text-sm sm:text-base">
-                Wijaya Grand Centre <br />
-                Jl. Wijaya II, Blok G No.15 <br />
-                Kebayoran Baru, Jakarta Selatan
-              </p>
+            <div className="mb-4">
+              <Link href="https://www.google.com/maps/place/Wijaya+Grand+Centre,+Jl.+Wijaya+II+Blok+G+No.15,+Kebayoran+Baru,+Jakarta+Selatan" target="_blank" rel="noopener noreferrer" className="flex flex-col hover:text-[#0F713B] transition">
+                <h3 className="font-semibold text-[#14462C]">Marketing Office</h3>
+                <p className="bodyCustom text-sm sm:text-base">
+                  Wijaya Grand Centre <br />
+                  Jl. Wijaya II, Blok G No.15 <br />
+                  Kebayoran Baru, Jakarta Selatan
+                </p>
+              </Link>
             </div>
 
             {/* Workshop */}
-            <div className="mb-6">
-              <h3 className="font-semibold text-[#14462C]">Workshop</h3>
-              <p className="bodyCustom text-sm sm:text-base">
-                Jl. Besakih V Blok G6 No. 26 <br />
-                Limo, Depok, Jawa Barat
-              </p>
+            <div className="mb-4">
+              <Link href="https://www.google.com/maps/place/Jl.+Besakih+V+Blok+G6+No.26,+Limo,+Depok,+Jawa+Barat" target="_blank" rel="noopener noreferrer" className="flex flex-col hover:text-[#0F713B] transition">
+                <h3 className="font-semibold text-[#14462C]">Workshop</h3>
+                <p className="bodyCustom text-sm sm:text-base">
+                  Jl. Besakih V Blok G6 No. 26 <br />
+                  Limo, Depok, Jawa Barat
+                </p>
+              </Link>
             </div>
 
             {/* Contacts */}
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#14462C]" />
                 <span className="bodyCustom">(021) 5022836</span>
-              </div>
-              <div className="flex items-center gap-3">
+              </div> */}
+              <Link className="flex items-center gap-3" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya" target="_blank">
                 <MessageCircle className="w-5 h-5 text-[#14462C]" />
                 <span className="bodyCustom">+62 851 7676 5995</span>
-              </div>
-              <div className="flex items-center gap-3">
+              </Link>
+              <Link href="mailto:netintegrakomunikasi@gmail.com" className="flex items-center gap-3 hover:underline hover:text-[#0F713B] transition">
                 <Mail className="w-5 h-5 text-[#14462C]" />
-                <span className="bodyCustom">staff@netincom.id</span>
-              </div>
-              <div className="flex items-center gap-3">
+                <span className="bodyCustom">netintegrakomunikasi@gmail.com</span>
+              </Link>
+              <Link href="https://www.instagram.com/netincom.id" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline hover:text-[#0F713B] transition">
                 <Instagram className="w-5 h-5 text-[#14462C]" />
                 <span className="bodyCustom">@netincom.id</span>
-              </div>
-              <div className="flex items-center gap-3">
+              </Link>
+              <Link href="https://www.linkedin.com/company/netintegrakomunikasi/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline hover:text-[#0F713B] transition">
                 <Linkedin className="w-5 h-5 text-[#14462C]" />
                 <span className="bodyCustom">Netincom</span>
-              </div>
+              </Link>
             </div>
           </div>
 

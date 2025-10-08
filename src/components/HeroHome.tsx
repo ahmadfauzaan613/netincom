@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import Background from '../../public/images/background.svg'
+import Background from '../../public/images/Links/patrick-tomasso-gMes5dNykus-unsplash.jpg'
 import { motion } from 'framer-motion'
 
 export default function HeroHome() {

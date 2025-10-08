@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { portfolioItems } from '@/data/portfolio'
+import { portfolioItems2 } from '@/data/portfolio'
 import { motion } from 'framer-motion'
 import { MoveLeft } from 'lucide-react'
 import Gallery from '@/components/Home/Gallery'
@@ -12,7 +12,7 @@ export default function PortfolioDetail() {
   const params = useParams()
   const router = useRouter()
   const { id } = params
-  const item = portfolioItems.find((p) => p.id === Number(id))
+  const item = portfolioItems2.find((p) => p.id === Number(id))
 
   const handleBack = () => {
     router.back()
@@ -42,7 +42,7 @@ export default function PortfolioDetail() {
         </div>
 
         {/* Gallery */}
-        <div className="mt-16">
+        <div className={`${item?.gallery.length === 0 && 'hidden'} mt-16`}>
           <h2 className="text-2xl sm:text-3xl md:text-3xl px-6 font-bold titleCustom text-[#14462C] mb-6">Gallery</h2>
           <Gallery data={item?.gallery ?? []} hidden={false} />
         </div>

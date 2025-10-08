@@ -8,7 +8,7 @@ import Gallery from '@/components/Home/Gallery'
 import QuoteSection from '@/components/Home/QuoteSection'
 import Connection from '@/components/Home/Connection'
 import React from 'react'
-import { portfolioItems } from '@/data/portfolio'
+import { portfolioItems2 } from '@/data/portfolio'
 import { imagesData } from '@/data/images'
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className="container mx-auto">
         <div className="py-20">
-          <Portofolio data={portfolioItems} hidden={true} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4" />
+          <Portofolio data={portfolioItems2} hidden={true} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4" />
         </div>
       </div>
       <div className="bg-white">

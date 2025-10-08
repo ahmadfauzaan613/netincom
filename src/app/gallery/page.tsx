@@ -2,7 +2,7 @@
 
 import Hero from '@/components/Hero'
 import React from 'react'
-import ContactUs from '../../../public/images/contact.svg'
+import ContactUs from '../../../public/images/Links/still-life-graphic-design-studio.jpg'
 import { imagesData } from '@/data/images'
 import Gallery from '@/components/Home/Gallery'
 

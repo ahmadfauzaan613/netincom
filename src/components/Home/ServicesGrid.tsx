@@ -12,8 +12,8 @@ export default function ServicesGrid() {
     { title: 'MANUAL GCG', image: '/images/Links/gcg doss mockup.png' },
     { title: 'RENCANA JANGKA PANJANG PERUSAHAAN (RJPP)', image: '/images/Links/RJPP.png' },
     { title: 'OTHER BOOKLET & MAGAZINE', image: '/images/Links/PO mockup.png' },
-    { title: 'CALENDAR DESIGN AND PRODUCTION', image: '/images/Links/[IPC] Mockup Sample Calendar 2025.jpg' },
-    { title: 'PHOTO AND VIDEO', image: '/images/Links/VIDEO COMPRO PDSI.jpg' },
+    { title: 'CALENDAR DESIGN AND PRODUCTION', image: '/images/Links/desk-calendar-with-texts-english.jpg' },
+    { title: 'PHOTO AND VIDEO', image: '/images/Links/arrangement-professional-photographer-equipment.jpg' },
   ]
 
   return (
