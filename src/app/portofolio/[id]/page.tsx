@@ -7,23 +7,21 @@ import { motion } from 'framer-motion'
 import { MoveLeft } from 'lucide-react'
 import Gallery from '@/components/Home/Gallery'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function PortfolioDetail() {
   const params = useParams()
-  const router = useRouter()
   const { id } = params
   const item = portfolioItems2.find((p) => p.id === Number(id))
-
-  const handleBack = () => {
-    router.back()
-  }
 
   return (
     <div className="bg-white pt-20 px-6">
       <div className="container mx-auto py-10">
-        <motion.button onClick={handleBack} whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="my-4 mx-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
-          <MoveLeft className="w-5 h-5" /> BACK
-        </motion.button>
+        <Link href={'/'}>
+          <motion.button whileHover={{ x: -5 }} whileTap={{ scale: 0.95 }} className="my-4 mx-6 inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline">
+            <MoveLeft className="w-5 h-5" /> BACK
+          </motion.button>
+        </Link>
 
         {/* Hero Image with Overlay */}
         <div className="mx-6 relative w-full h-[50vh] rounded-2xl overflow-hidden shadow-lg mb-10">

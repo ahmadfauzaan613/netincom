@@ -47,7 +47,7 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
 
   // 🧩 Jika path === '/', ambil 3 index terakhir
   if (path === '/') {
-    filteredData = filteredData.slice(-3)
+    filteredData = filteredData.slice(0, 3)
   }
 
   // 🪄 Fungsi toggle Read More

@@ -1,6 +1,6 @@
 import Hero from '@/components/Hero'
 import React from 'react'
-import ContactUs from '../../../public/images/Links/still-life-graphic-design-studio.jpg'
+import ContactUs from '../../../public/images/contact.svg'
 import Portofolio from '@/components/Home/Portofolio'
 import { portfolioItems2 } from '@/data/portfolio'
 

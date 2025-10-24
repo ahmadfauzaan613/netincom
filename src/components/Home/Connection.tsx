@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import ContactUs from '../../../public/images/Links/still-life-graphic-design-studio.jpg'
+import ContactUs from '../../../public/images/contact.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 

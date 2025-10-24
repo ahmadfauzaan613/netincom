@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { Download, MoveRight } from 'lucide-react'
 import { motion } from 'framer-motion'
-import about from '../../../public/images/Links/business-people-shaking-hands-together.jpg'
+import about from '../../../public/images/about2.svg'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
