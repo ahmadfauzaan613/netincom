@@ -30,8 +30,10 @@ export const PartnerData = [
   { id: 3, src: '/images/Links/AIMS LOGO.png', alt: 'Client 3' },
   { id: 8, src: '/images/Links/logo_blue.png', alt: 'Client 8' },
   { id: 20, src: '/images/Links/LOGO-WIDI-01.png', alt: 'Client 20' },
-
   { id: 23, src: '/images/Links/logo-new.png', alt: 'Client 23' },
-
   { id: 34, src: '/images/Links/cashlez-logo.png', alt: 'Client 34' },
+
+  { id: 35, src: '/images/Links/1325125807-removebg-preview-cut.png', alt: 'Client 35' },
+  { id: 36, src: '/images/Links/Screenshot_from_2025-10-25_22-54-35-removebg-preview.png', alt: 'Client 36' },
+  { id: 37, src: '/images/Links/sini-removebg-preview-crop.png', alt: 'Client 37' },
 ]

@@ -1,13 +1,13 @@
 'use client'
 
-import Image from 'next/image'
+import { portoDataLink } from '@/data/portfolio'
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import { FolderOpen } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 import PortoLink from '../PortoLink'
-import { portoDataLink } from '@/data/portfolio'
-import { FolderOpen } from 'lucide-react'
 
 interface GalleryProps {
   src: string
@@ -61,7 +61,7 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
         <div className="text-left mx-auto px-6">
           <h1 className="text-3xl sm:text-4xl md:text-4xl titleCustom font-bold text-[#14462C]">PORTFOLIO</h1>
           <p className="text-sm sm:text-base md:text-base bodyCustom leading-relaxed pt-5 text-gray-600">
-            Netincom stands as a visionary force in the realm of creative communication consultancy, offering fully integrated services. Our journey is driven by an unwavering commitment to excellence, a passion for innovation, and an unrelenting focus on client satisfaction.
+            Our portfolio reflects years of collaboration with leading public companies and state-owned enterprises. Each project showcases our ability to combine storytelling, design, and regulatory compliance—delivering reports and publications that not only inform but also inspire trust and pride.
           </p>
         </div>
       )}
@@ -91,9 +91,9 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
                 {...(path === '/portfolio'
                   ? { animate: { opacity: 1, y: 0 } }
                   : {
-                      whileInView: { opacity: 1, y: 0 },
-                      viewport: { once: true, amount: 0.1 },
-                    })}
+                    whileInView: { opacity: 1, y: 0 },
+                    viewport: { once: true, amount: 0.1 },
+                  })}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
               >

@@ -369,7 +369,7 @@ export const portfolioItems2 = [
   // Other Corporate Books
   {
     id: 34,
-    title: 'PT Pertamina NRE',
+    title: 'PT Pertamina Power Indonesia (PNRE)',
     desc: 'Booklet',
     text: 'Booklet',
     image: '/images/Links/PO.png',
@@ -402,9 +402,9 @@ export const portfolioItems2 = [
   },
   {
     id: 37,
-    title: 'PT Pertamina NRE',
-    desc: 'Corporate Plan, Strategic Planning, atau Long-term Business Plan',
-    text: 'Corporate Plan, Strategic Planning, atau Long-term Business Plan',
+    title: 'PT Pertamina Power Indonesia (PNRE)',
+    desc: 'Long Term Bussiness Plan',
+    text: 'Long Term Bussiness Plan',
     image: '/images/Links/RJPP.png',
     gallery: [],
     link: '#',
@@ -505,8 +505,8 @@ export const portfolioItems2 = [
   {
     id: 43,
     title: 'Kementerian Lingkungan Hidup dan Kehutanan (KLHK)',
-    desc: 'Calendar Design & Other Production',
-    text: 'Calendar Design & Other Production',
+    desc: 'Web Development',
+    text: 'Web Development',
     image: '/images/Links/WEB_KLHK.jpg',
     gallery: [],
     link: '#',
@@ -516,8 +516,8 @@ export const portfolioItems2 = [
   {
     id: 44,
     title: 'PT Ramadya Cakra Semesta',
-    desc: 'Calendar Design & Other Production',
-    text: 'Calendar Design & Other Production',
+    desc: 'Web Development',
+    text: 'Web Development',
     image: '/images/Links/WEB_RAMADYA_copy.jpg',
     gallery: [],
     link: '#',
@@ -621,6 +621,59 @@ export const portfolioItems2 = [
     gallery: [],
     link: '#',
     year: '2023',
+    type: 'Photo & Video',
+  },
+  {
+    id: 54,
+    title: 'PT Internasional Prima Coal',
+    desc: 'Site Photo Session',
+    text: 'Site Photo Session',
+    image: '/images/Links/DSC02973.jpg',
+    gallery: [
+      {
+        src: '/images/Links/DSC03753.jpg',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+       {
+        src: '/images/Links/Foto_Tambang_1.JPG',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+      {
+        src: '/images/Links/DSC03307.jpg',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+      {
+        src: '/images/Links/DSC02973.jpg',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+      {
+        src: '/images/Links/DJI_20240116110423_0003_V.JPG',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+      {
+        src: '/images/Links/DJI_20240117102430_0011_V.JPG',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+      {
+        src: '/images/Links/DJI_20240117103214_0038_V.JPG',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+      {
+        src: '/images/Links/DSC03541.jpg',
+        alt: '',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
+      },
+
+    ],
+    link: '#',
+    year: '2024',
     type: 'Photo & Video',
   },
 ]

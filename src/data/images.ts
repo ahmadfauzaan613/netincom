@@ -11,10 +11,11 @@ export const imagesData = [
   // { src: '/images/Links/DSC05912.JPG', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
   // { src: '/images/Links/DSC05932.JPG', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
   { src: '/images/Links/Mangrove_3.jpg', desc: 'CSR Program: Mangrove Planting at Muara Gembong', alt: 'AR SIDO' },
-  { src: '/images/Links/Mangrove.jpg', desc: 'CSR Program: Mangrove Planting at Muara Gembong', alt: 'AR SUNI' },
-  // { src: '/images/Links/ASSRAT PELNI.png', desc: 'Gold Rating ASRRAT 2024 for PT Pelayaran Nasional Indonesia (Persero) (2025)', alt: 'Gambar 1' },
-  // { src: '/images/Links/ASSRAT PNRE.png', desc: 'Gold Rating ASRRAT 2024 for PT Pertamina New & Renewable Energy (2025)', alt: 'AMAAN MOCKUP' },
+  // { src: '/images/Links/Mangrove.jpg', desc: 'CSR Program: Mangrove Planting at Muara Gembong', alt: 'AR SUNI' },
+   { src: '/images/Links/ASSRAT PELNI.png', desc: 'Gold Rating ASRRAT 2024 for PT Pelayaran Nasional Indonesia (Persero) (2025)', alt: 'Gambar 1' },
+   { src: '/images/Links/ASSRAT PNRE.png', desc: 'Gold Rating ASRRAT 2024 for PT Pertamina New & Renewable Energy (2025)', alt: 'AMAAN MOCKUP' },
   // { src: '/images/Links/Papan_konten.png', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
+  { src: '/images/Links/Picture1.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
 ]
 
 export const galleryData = [
@@ -33,5 +34,21 @@ export const galleryData = [
   { src: '/images/Links/Mangrove.jpg', desc: 'CSR Program: Mangrove Planting at Muara Gembong', alt: 'AR SUNI' },
   { src: '/images/Links/ASSRAT PELNI.png', desc: 'Gold Rating ASRRAT 2024 for PT Pelayaran Nasional Indonesia (Persero) (2025)', alt: 'Gambar 1' },
   { src: '/images/Links/ASSRAT PNRE.png', desc: 'Gold Rating ASRRAT 2024 for PT Pertamina New & Renewable Energy (2025)', alt: 'AMAAN MOCKUP' },
+  { src: '/images/Links/Picture1.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
   { src: '/images/Links/Papan_konten.png', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
+  { src: '/images/Links/WhatsApp-Image-2025-10-08_at_14.29.53_2.jpeg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PELNI' },
+  { src: '/images/Links/WhatsApp-Image-2025-10-08-at-14.29.27.jpeg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PHE' },
+  { src: '/images/Links/Training-PT-PELNI-0134.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
+  { src: '/images/Links/Training-PT-PELNI-0095.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
+  { src: '/images/Links/IMG_0399.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
+  { src: '/images/Links/DSC03541.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PHE' },
+  { src: '/images/Links/DJI_20240117103214_0038_V.JPG', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
+  { src: '/images/Links/DJI_20240117102430_0011_V.JPG', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
+  { src: '/images/Links/DJI_20240116110423_0003_V.JPG', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
+  { src: '/images/Links/DSC02973.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PHE' },
+  { src: '/images/Links/DSC03307.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
+  { src: '/images/Links/Foto_Tambang_1.JPG', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR PNRE' },
+  { src: '/images/Links/DSC03753.jpg', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', alt: 'AR WIDI' },
+
+
 ]
