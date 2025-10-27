@@ -496,7 +496,7 @@ export const portfolioItems2 = [
     title: 'PT Internasional Prima Coal',
     desc: 'Brochure',
     text: 'Brochure',
-    image: '/images/Links/simone-secci-49uySSA678U-unsplash.jpg',
+    image: '/images/Links/COMPRO_IPC.png',
     gallery: [],
     link: '#',
     year: '2025',
@@ -531,25 +531,25 @@ export const portfolioItems2 = [
     title: 'PT Jawa Satu Power',
     desc: 'Board of Directors Photo Session',
     text: 'Board of Directors Photo Session',
-    image: '/images/Links/DSC05912.JPG',
+    image: '/images/Links/DSC06959.JPG',
     gallery: [
       {
-        src: '/images/Links/DSC05560.JPG',
+        src: '/images/Links/DSC06246.JPG',
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
       },
       {
-        src: '/images/Links/DSC05912.JPG',
+        src: '/images/Links/DSC06232.JPG',
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
       },
       {
-        src: '/images/Links/DSC05932.JPG',
+        src: '/images/Links/DSC06441.JPG',
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
       },
       {
-        src: '/images/Links/DSC05702.JPG',
+        src: '/images/Links/DSC06959.JPG',
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
       },
@@ -566,7 +566,6 @@ export const portfolioItems2 = [
     image: '/images/Links/20250618_hexindo_1037.jpg',
     gallery: [
       { src: '/images/Links/20250618_hexindo_1037.jpg', alt: '', desc: 'Talent Photo Session' },
-      { src: '/images/Links/DSC05702.JPG', alt: '', desc: 'Talent Photo Session' },
       { src: '/images/Links/Papan_konten.png', alt: '', desc: 'Talent Photo Session' },
     ],
     link: '#',
@@ -578,13 +577,15 @@ export const portfolioItems2 = [
     title: 'PT Jawa Satu Power',
     desc: 'Site Photo Session',
     text: 'Site Photo Session',
-    image: '/images/Links/DJI_20240116110739_0020_V.JPG',
+    image: '/images/Links/2024_05_27_JSP7731.jpg',
     gallery: [
-      {
-        src: '/images/Links/DJI_20240116152747_0009_V.JPG',
-        alt: '',
-        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
-      },
+      { src: '/images/Links/DSC05702.JPG', alt: '', desc: 'Talent Photo Session' },
+      { src: '/images/Links/2024_05_27_JSP7453.jpg', alt: '', desc: 'Talent Photo Session' },
+      { src: '/images/Links/2024_05_27_JSP7669.jpg', alt: '', desc: 'Talent Photo Session' },
+      { src: '/images/Links/2024_05_27_JSP7731.jpg', alt: '', desc: 'Talent Photo Session' },
+      { src: '/images/Links/2024_05_27_JSP7543.jpg', alt: '', desc: 'Talent Photo Session' },
+      { src: '/images/Links/DJI_0722.JPG', alt: '', desc: 'Talent Photo Session' },
+      { src: '/images/Links/DJI_0715.JPG', alt: '', desc: 'Talent Photo Session' },
     ],
     link: '#',
     year: '2023',
@@ -635,7 +636,7 @@ export const portfolioItems2 = [
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
       },
-       {
+      {
         src: '/images/Links/Foto_Tambang_1.JPG',
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
@@ -670,7 +671,6 @@ export const portfolioItems2 = [
         alt: '',
         desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero eveniet iste reprehenderit voluptates nesciunt perferendis praesentium consectetur eligendi atque itaque a tempore assumenda, officiis suscipit facilis cumque dolor. Odio?',
       },
-
     ],
     link: '#',
     year: '2024',
