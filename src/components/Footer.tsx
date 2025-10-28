@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { Instagram, Linkedin, Mail, MessageCircle, Phone } from 'lucide-react'
+import { Instagram, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 

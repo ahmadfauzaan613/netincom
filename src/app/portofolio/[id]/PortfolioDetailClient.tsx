@@ -6,8 +6,9 @@ import { MoveLeft } from 'lucide-react'
 import Gallery from '@/components/Home/Gallery'
 import Image from 'next/image'
 import Link from 'next/link'
+import { PortfolioItem } from '@/data/portfolio'
 
-export default function PortfolioDetail({ item }: { item: any }) {
+export default function PortfolioDetail({ item }: { item: PortfolioItem }) {
   return (
     <div className="bg-white pt-20 px-6">
       <div className="container mx-auto py-10">

@@ -1,5 +1,23 @@
 export const portoDataLink = [{ name: 'Annual & Sustainability Report' }, { name: 'Other Corporate Books' }, { name: 'Calendar Design & Other Production' }, { name: 'Photo & Video' }]
 
+export type GalleryItem = {
+  src: string
+  alt: string
+  desc: string
+}
+
+export type PortfolioItem = {
+  id: number
+  title: string
+  desc: string
+  text: string
+  image: string
+  gallery: GalleryItem[]
+  link: string
+  year: string
+  type: string
+}
+
 export const portfolioItems2 = [
   // Annual & Sustainability Report
   {
