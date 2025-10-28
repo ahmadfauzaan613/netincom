@@ -42,7 +42,7 @@ export default function Gallery({ data, hidden }: GalleryProps) {
           <Dialog key={i}>
             <DialogTrigger asChild>
               <div className="relative w-full h-[25vh] rounded-lg overflow-hidden group shadow-md cursor-pointer" onClick={() => setSelectedImage(item)}>
-                <Image src={item.src} alt={item.alt} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                <Image src={item.src} alt={item.alt} fill loading="lazy" className="object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
             </DialogTrigger>
 

@@ -54,7 +54,7 @@ export default function OurPartnership({ data }: OurPartnershipProps) {
               whileHover={{ scale: 1.05 }}
               className=" relative w-full h-20 sm:h-24 md:h-28 lg:h-32 flex items-center justify-center rounded-xl transition-all duration-300 "
             >
-              <Image src={item.src} alt={item.alt} fill className="object-contain p-4 opacity-80 hover:opacity-100 transition-opacity duration-300" />
+              <Image src={item.src} loading="lazy" alt={item.alt} fill className="object-contain p-4 opacity-80 hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </motion.div>

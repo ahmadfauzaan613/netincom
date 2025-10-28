@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import Logo from '../../public/images/Netincom_b.png'
+import Logo from '../../public/images/Links/Netincom_b.webp'
 import { useState, useEffect } from 'react'
 import { Menu } from 'lucide-react'
 import { usePathname } from 'next/navigation'
@@ -78,9 +78,9 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 text-white">
             {links.map((link) =>
               link.isAnchor ? (
-                <a key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors">
+                <Link key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors">
                   {link.label}
-                </a>
+                </Link>
               ) : (
                 <Link key={link.href} href={link.href} className="hover:text-[#fff] transition-colors">
                   {link.label}
@@ -101,9 +101,9 @@ export default function Navbar() {
         <div className="md:hidden px-6 mt-4 py-4 flex text-white flex-col gap-4">
           {links.map((link) =>
             link.isAnchor ? (
-              <a key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors" onClick={() => setOpen(false)}>
+              <Link key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors" onClick={() => setOpen(false)}>
                 {link.label}
-              </a>
+              </Link>
             ) : (
               <Link key={link.href} href={link.href} className="hover:text-[#fff] bodyCustom transition-colors" onClick={() => setOpen(false)}>
                 {link.label}

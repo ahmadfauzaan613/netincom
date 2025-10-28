@@ -22,7 +22,7 @@ export default function ClientCarousel() {
         {PartnerData.map((item) => (
           <CarouselItem key={item.id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 flex items-center justify-center">
             <div className="relative w-40 h-20 p-2 flex items-center justify-center">
-              <Image src={item.src} alt={item.alt} fill className="object-contain" priority />
+              <Image src={item.src} alt={item.alt} fill className="object-contain" loading="lazy" />
             </div>
           </CarouselItem>
         ))}

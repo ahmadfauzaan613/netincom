@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Town from '../../../public/images/Links/tokyo-japan-cityscape copy.jpg'
+import Town from '../../../public/images/Links/tokyo-japan-cityscape copy.webp'
 
 export default function QuoteSection() {
   return (

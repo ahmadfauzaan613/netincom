@@ -1,6 +1,6 @@
 import Hero from '@/components/Hero'
 import React from 'react'
-import ContactUs from '../../../public/images/contact.svg'
+import ContactUs from '../../../public/images/Links/contact.webp'
 import Portofolio from '@/components/Home/Portofolio'
 import { portfolioItems2 } from '@/data/portfolio'
 

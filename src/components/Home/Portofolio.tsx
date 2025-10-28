@@ -61,7 +61,8 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
         <div className="text-left mx-auto px-6">
           <h1 className="text-3xl sm:text-4xl md:text-4xl titleCustom font-bold text-[#14462C]">PORTFOLIO</h1>
           <p className="text-sm sm:text-base md:text-base bodyCustom leading-relaxed pt-5 text-gray-600">
-            Our portfolio reflects years of collaboration with leading public companies and state-owned enterprises. Each project showcases our ability to combine storytelling, design, and regulatory compliance—delivering reports and publications that not only inform but also inspire trust and pride.
+            Our portfolio reflects years of collaboration with leading public companies and state-owned enterprises. Each project showcases our ability to combine storytelling, design, and regulatory compliance—delivering reports and publications that not only inform but also inspire trust and
+            pride.
           </p>
         </div>
       )}
@@ -91,14 +92,14 @@ export default function Portofolio({ data, hidden, className }: PortoProps) {
                 {...(path === '/portfolio'
                   ? { animate: { opacity: 1, y: 0 } }
                   : {
-                    whileInView: { opacity: 1, y: 0 },
-                    viewport: { once: true, amount: 0.1 },
-                  })}
+                      whileInView: { opacity: 1, y: 0 },
+                      viewport: { once: true, amount: 0.1 },
+                    })}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
               >
                 <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden group">
-                  <Image src={item.image} alt={item.title} fill className="object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                  <Image src={item.image} alt={item.title} loading="lazy" fill className="object-cover transform group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
                 </div>
 

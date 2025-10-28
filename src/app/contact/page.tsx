@@ -2,10 +2,10 @@
 
 import Hero from '@/components/Hero'
 import React from 'react'
-import ContactHero from '../../../public/images/contact.svg'
+import ContactHero from '../../../public/images/Links/contact.webp'
 import { Instagram, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
-import ContactUs from '../../../public/images/Links/modern-business-building-scenery-touching-sky.jpg'
+import ContactUs from '../../../public/images/Links/modern-business-building-scenery-touching-sky.webp'
 import Link from 'next/link'
 
 export default function Contact() {

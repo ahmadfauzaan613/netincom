@@ -1,4 +1,4 @@
-import ContactUs from '../../../public/images/contact.svg'
+import ContactUs from '../../../public/images/Links/contact.webp'
 import React from 'react'
 import Hero from '@/components/Hero'
 import Connection from '@/components/Home/Connection'

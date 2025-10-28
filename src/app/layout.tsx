@@ -38,7 +38,7 @@ export default function RootLayout({
         {children}
         <div className="fixed bottom-8 right-8 z-50">
           <Link href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya" target="_blank">
-            <Image src="/images/whatsapp2.png" alt="Whatsapp" width={45} height={45} className="cursor-pointer" />
+            <Image src="/images/Links/whatsapp2.webp" alt="Whatsapp" width={45} height={45} className="cursor-pointer" />
           </Link>
         </div>
         <ScrollToTop />
