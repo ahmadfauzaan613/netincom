@@ -23,7 +23,7 @@ export default function Footer() {
     },
     {
       icon: <MessageCircle size={18} />,
-      link: 'https://wa.me/6281234567890?text=Halo%20Netincom%2C%20saya%20ingin%20bertanya',
+      link: 'https://wa.me/6285176765995?text=Halo%20Netincom%2C%20saya%20ingin%20bertanya',
     },
     {
       icon: <Linkedin size={18} />,

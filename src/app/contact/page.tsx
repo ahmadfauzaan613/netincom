@@ -51,7 +51,7 @@ export default function Contact() {
                 <Phone className="w-5 h-5 text-[#14462C]" />
                 <span className="bodyCustom">(021) 5022836</span>
               </div> */}
-              <Link className="flex items-center gap-3" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya" target="_blank">
+              <Link className="flex items-center gap-3" href="https://wa.me/6285176765995?text=Halo%20saya%20ingin%20bertanya" target="_blank">
                 <MessageCircle className="w-5 h-5 text-[#14462C]" />
                 <span className="bodyCustom">+62 851 7676 5995</span>
               </Link>

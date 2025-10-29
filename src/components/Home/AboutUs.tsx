@@ -24,7 +24,7 @@ export default function AboutUs() {
           </MotionLink>
         ) : (
           <MotionLink
-            href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20meminta%20file%20Company%20Profile%20perusahaan%20Anda.%20Terima%20kasih%20atas%20bantuannya."
+            href="https://wa.me/6285176765995?text=Halo%2C%20saya%20ingin%20meminta%20file%20Company%20Profile%20perusahaan%20Anda.%20Terima%20kasih%20atas%20bantuannya."
             target="_blank"
             whileHover={{ x: 5 }}
             className="mt-4 sm:mt-6 bodyCustom inline-flex items-center gap-2 text-orange-600 font-semibold cursor-pointer hover:underline"
